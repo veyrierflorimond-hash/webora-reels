@@ -147,6 +147,7 @@ Hashtags (5, choisir selon la cible) :
 7. Reporter les `id` Metricool (Reel + story) dans `history.json`, commit + push.
 8. Faire ensuite le **carrousel du jour** (section 9) pour la même date à 18:00.
 9. Prévenir l'utilisateur (message court) : sujet, date de publication, lien `plannerUrl`, la vidéo jointe.
+   Terminer le message par un rappel : « Pense à partager le carrousel en story depuis l'appli Instagram après 18h (bouton Ajouter à ta story) » — ce partage cliquable ne peut pas être automatisé.
 
 Si une étape échoue (voix non conforme après 2 essais, rendu cassé, Metricool en erreur) :
 **ne rien programmer**, prévenir l'utilisateur avec l'erreur exacte.
