@@ -166,11 +166,22 @@ Si une étape échoue (voix non conforme après 2 essais, rendu cassé, Metricoo
 
 Une publication par jour, en **carrousel** (couverture + 3 à 5 slides + slide finale), même date que le Reel.
 
-1. **Sujet** : complémentaire du Reel du jour (même cible), format différent. Idées :
-   « 3 erreurs qui font fuir tes clients », « Ce que ton client regarde en 10 secondes sur ton site »,
-   « Check-list : ce que doit avoir le site d'un(e) <métier> », « Mythe / réalité : un site c'est trop cher / compliqué / inutile »,
-   « 5 questions que tes clients se posent avant de t'appeler », « Fiche Google seule vs fiche Google + site »,
-   « Comment un client choisit son <métier> en 2026 ». Pas de prix, pas de chiffre ni de client inventés.
+1. **Sujet** : mêmes exigences que les Reels — **un sujet différent chaque jour** (jamais repris sur 30 jours,
+   vérifier les entrées `"format": "carousel"` de `history.json`), **cible alternée**, même cible que le Reel du jour,
+   toujours autour de **l'offre Webora et de ce qu'elle apporte aux clients**. Faire tourner ces familles
+   (ne jamais en enchaîner deux identiques) :
+   - **Problèmes vécus** : « 3 erreurs qui font fuir tes clients », « Pourquoi ton bouche-à-oreille ne suffit plus »,
+     « Ce qui se passe quand un client ne te trouve pas ».
+   - **Conseils pratiques** : « Check-list : le site d'un(e) <métier> doit avoir… », « Ce que ton client regarde en 10 secondes »,
+     « Les photos qui donnent envie de t'appeler », « Comment rassurer un client qui ne te connaît pas ».
+   - **L'offre Webora** (≈ 1 à 2 fois par semaine) : site vitrine **ou** boutique en ligne selon le besoin, pour qui,
+     comment ça se passe étape par étape, ce que ça change au quotidien. **N'affirmer que ce qui est dans la section 10.**
+   - **Mythes / réalité** : « Un site c'est compliqué », « Instagram suffit », « J'ai déjà assez de clients »,
+     « Ma fiche Google suffit ».
+   - **Questions de clients** : « 5 questions que tes clients se posent avant de t'appeler », « Fiche Google seule vs fiche + site ».
+   - **Par métier** : un carrousel dédié à un métier précis (plombier, électricien, couvreur, paysagiste, esthéticienne,
+     prothésiste ongulaire, spa, coiffeur…) : ses situations, ce que son site doit montrer.
+   Pas de prix, pas de chiffre ni de client inventés.
 2. Écrire `posts_src/<date>_<slug>.json` (format en tête de `engine/post.py`) :
    `tag` (cible, en majuscules), `cover` (2-4 lignes courtes, un mot `*surligné*`), `cover_sub` (optionnel),
    `slides` : 3 à 5 × {`title` ≤ 8 mots, `body` ≤ 30 mots, `fix` ≤ 18 mots = « La solution »}, `cta_lines` (1-2 lignes).
@@ -189,3 +200,14 @@ Une publication par jour, en **carrousel** (couverture + 3 à 5 slides + slide f
  "instagramData": {"type": "POST", "isAiGenerated": false}}
 ```
 6. Ajouter l'entrée à `history.json` avec `"format": "carousel"` et l'`id` Metricool.
+
+## 10. Ce que l'on sait de l'offre Webora (ne rien affirmer d'autre)
+
+- Webora crée des **sites vitrines** et des **boutiques en ligne (shop)**, selon les besoins du client.
+- Clients : artisans du bâtiment, métiers de la beauté et du bien-être (centres de soins, spas, onglerie, esthéticiennes…),
+  indépendants.
+- Ce que le site apporte (angle de communication) : visibilité sur Google, mise en avant des services et des réalisations,
+  demandes de devis / de rendez-vous même quand le client est occupé, ne plus laisser filer de clients.
+- Tarif : existe, mais **ne jamais l'afficher** dans les contenus (il se donne en message privé).
+- Infos à compléter par Florimond (tant qu'elles ne sont pas remplies, ne pas en parler) : délai de livraison,
+  ce qui est inclus (nom de domaine, hébergement, maintenance, référencement local, fiche Google…), zone géographique.
