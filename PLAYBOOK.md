@@ -13,7 +13,7 @@ de bout en bout. Langue des contenus : **français, tutoiement**.
 | Dépôt | `veyrierflorimond-hash/webora-reels` (public) — vidéos servies via `https://raw.githubusercontent.com/veyrierflorimond-hash/webora-reels/main/<chemin>` |
 | Voix | Speko, clone **« Webora - voix IA dynamique »**, fournisseur `cartesia`, voice id **`0d3527fd-ceda-4a51-98d4-1849a3358d02`** |
 | Couleurs | bleu pétrole `#04485B`, turquoise `#26B6C4`, blanc cassé `#F7F8F2` (déjà dans le moteur) |
-| Publication | **1 Reel par jour à 10:00** (heure de Paris) |
+| Publication | chaque jour : **Reel à 10:00**, **le même Reel en story à 12:30**, **carrousel à 18:00** (heure de Paris) |
 
 Cibles : artisans du bâtiment (plombier, électricien, maçon, couvreur, menuisier, peintre, paysagiste…),
 métiers de la beauté et du bien-être (esthéticienne, prothésiste ongulaire, spa, centre de soins, coiffeur…),
@@ -142,8 +142,11 @@ Hashtags (5, choisir selon la cible) :
  "shortener": false, "smartLinkData": {"ids": []}, "text": "<description>",
  "instagramData": {"type": "REEL", "showReelOnFeed": true, "isAiGenerated": true}}
 ```
-6. Reporter le `id` Metricool dans `history.json`, commit + push.
-7. Prévenir l'utilisateur (message court) : sujet, date de publication, lien `plannerUrl`, la vidéo jointe.
+6. **Story** : programmer la même vidéo en story le même jour à **12:30** — `createScheduledPost` avec le même
+   `media`, **sans `text`**, `"instagramData": {"type": "STORY", "isAiGenerated": true}`, sans `videoCoverMilliseconds`.
+7. Reporter les `id` Metricool (Reel + story) dans `history.json`, commit + push.
+8. Faire ensuite le **carrousel du jour** (section 9) pour la même date à 18:00.
+9. Prévenir l'utilisateur (message court) : sujet, date de publication, lien `plannerUrl`, la vidéo jointe.
 
 Si une étape échoue (voix non conforme après 2 essais, rendu cassé, Metricool en erreur) :
 **ne rien programmer**, prévenir l'utilisateur avec l'erreur exacte.
@@ -158,3 +161,31 @@ Si une étape échoue (voix non conforme après 2 essais, rendu cassé, Metricoo
    `descriptionLanguage: ["fr"]`.
 3. Écrire 3 à 5 enseignements dans `insights.md` (sujets, accroches, formats qui marchent), commit + push,
    et les appliquer aux Reels de la semaine.
+
+## 9. Carrousel du jour (publication à 18:00)
+
+Une publication par jour, en **carrousel** (couverture + 3 à 5 slides + slide finale), même date que le Reel.
+
+1. **Sujet** : complémentaire du Reel du jour (même cible), format différent. Idées :
+   « 3 erreurs qui font fuir tes clients », « Ce que ton client regarde en 10 secondes sur ton site »,
+   « Check-list : ce que doit avoir le site d'un(e) <métier> », « Mythe / réalité : un site c'est trop cher / compliqué / inutile »,
+   « 5 questions que tes clients se posent avant de t'appeler », « Fiche Google seule vs fiche Google + site »,
+   « Comment un client choisit son <métier> en 2026 ». Pas de prix, pas de chiffre ni de client inventés.
+2. Écrire `posts_src/<date>_<slug>.json` (format en tête de `engine/post.py`) :
+   `tag` (cible, en majuscules), `cover` (2-4 lignes courtes, un mot `*surligné*`), `cover_sub` (optionnel),
+   `slides` : 3 à 5 × {`title` ≤ 8 mots, `body` ≤ 30 mots, `fix` ≤ 18 mots = « La solution »}, `cta_lines` (1-2 lignes).
+   La slide finale ajoute toujours « Envoie-moi un message » / « pour qu'on discute de ton projet ! » / @webora.agence.
+3. `python3 -I engine/post.py posts_src/<date>_<slug>.json posts/<date>_<slug>/` puis **regarder chaque image**
+   (texte qui ne déborde pas, encadré « La solution » complet).
+4. Description : mêmes règles qu'en section 6 (accroche ≤ 125 caractères, « 👉 Envoie-moi un message pour qu'on discute de ton projet ! », **exactement 5 hashtags**),
+   et inviter à enregistrer le post (« Enregistre-le pour plus tard »).
+5. Commit + push `posts/<date>_<slug>/` et `posts_src/…`, vérifier chaque lien raw (200), puis `createScheduledPost` :
+```json
+{"autoPublish": true, "draft": false, "descendants": [], "firstCommentText": "", "hasNotReadNotes": false,
+ "media": ["<raw>/posts/<date>_<slug>/01.jpg", "<raw>/.../02.jpg", "..."], "mediaAltText": [],
+ "providers": [{"network": "instagram"}],
+ "publicationDate": {"dateTime": "<jour>T18:00:00", "timezone": "Europe/Paris"},
+ "shortener": false, "smartLinkData": {"ids": []}, "text": "<description>",
+ "instagramData": {"type": "POST", "isAiGenerated": false}}
+```
+6. Ajouter l'entrée à `history.json` avec `"format": "carousel"` et l'`id` Metricool.

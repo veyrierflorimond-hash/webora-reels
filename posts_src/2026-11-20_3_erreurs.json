@@ -1,0 +1,30 @@
+{
+  "tag": "ARTISANS & INDÉPENDANTS",
+  "cover": [
+    "3 erreurs",
+    "qui font *fuir*",
+    "tes clients"
+  ],
+  "cover_sub": "avant même qu'ils t'appellent.",
+  "slides": [
+    {
+      "title": "Personne ne te trouve sur Google",
+      "body": "Ton client tape « plombier près de chez moi ». Si tu n'apparais pas, pour lui, tu n'existes pas.",
+      "fix": "Un site optimisé pour ta ville et ton métier, relié à ta fiche Google."
+    },
+    {
+      "title": "Aucune photo de ton travail",
+      "body": "Avant d'appeler, le client veut voir tes réalisations. Pas de photos, pas de confiance : il passe au suivant.",
+      "fix": "Une page « Réalisations » avec tes plus beaux chantiers, avant / après."
+    },
+    {
+      "title": "Impossible de te demander un devis",
+      "body": "Juste un numéro qui ne répond pas quand tu es occupé. Le client n'insiste pas, il contacte quelqu'un d'autre.",
+      "fix": "Un formulaire de devis ouvert 24h/24 : tu réponds quand tu as le temps."
+    }
+  ],
+  "cta_lines": [
+    "Un site règle",
+    "les *3 d'un coup*."
+  ]
+}
