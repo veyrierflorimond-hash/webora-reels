@@ -1,0 +1,11 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Ton prochain", "client te", "cherche", "*en ce moment*."], "voice": "work/2026-11-20/v0.wav"},
+ {"type": "search", "lines": ["Il tape sur Google :"], "query": "électricien près de chez moi",
+  "cards": [{"at": 1.6, "name": "Martin Électricité", "url": "www.martin-elec.fr", "rating": "4,8 · 37 avis"},
+            {"at": 1.85, "name": "AB Élec Services", "url": "www.ab-elec-services.fr", "rating": "4,7 · 21 avis"},
+            {"at": 2.1, "name": "Elec Pro 69", "url": "www.elecpro69.fr", "rating": "4,6 · 18 avis"}],
+  "ghost_at": 3.7, "voice": "work/2026-11-20/v1.wav"},
+ {"type": "statement", "lines": ["Il appelle", "*le premier*", "qu'il trouve."], "pill": "Pas toi.", "voice": "work/2026-11-20/v2.wav"},
+ {"type": "statement", "bg": "light", "lines": ["Pas de site,", "c'est des clients", "qui te passent", "*sous le nez*."], "voice": "work/2026-11-20/v3.wav"},
+ {"type": "cta", "lines": ["Sois celui", "qu'on *trouve*."], "voice": "work/2026-11-20/v4.wav"}
+]}

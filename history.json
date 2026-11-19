@@ -1,0 +1,5 @@
+[
+  {"date": "2026-11-20", "slug": "introuvable_google", "audience": "tous", "topic": "Le client cherche sur Google et ne te trouve pas", "hook": "Ton prochain client te cherche en ce moment.", "video": "videos/2026-11-20_introuvable_google.mp4", "metricool_id": 434041887},
+  {"date": "2026-11-21", "slug": "chantier_loupe", "audience": "batiment", "topic": "Appel manqué sur le chantier, le client appelle le suivant", "hook": "Tu rates des chantiers sans même le savoir.", "video": "videos/2026-11-21_chantier_loupe.mp4", "metricool_id": 434042182},
+  {"date": "2026-11-22", "slug": "beaute_spa", "audience": "beaute", "topic": "Messages pendant un soin, la cliente réserve ailleurs", "hook": "Pendant ton soin, tu perds des clientes.", "video": "videos/2026-11-22_beaute_spa.mp4", "metricool_id": 434042224}
+]
