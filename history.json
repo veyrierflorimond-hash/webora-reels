@@ -31,5 +31,32 @@
     "metricool_id": 434042224,
     "format": "reel",
     "story_metricool_id": 434050654
+  },
+  {
+    "date": "2026-11-20",
+    "format": "carousel",
+    "slug": "3_erreurs",
+    "audience": "tous",
+    "topic": "3 erreurs qui font fuir tes clients (Google, photos, devis)",
+    "post": "posts/2026-11-20_3_erreurs/",
+    "metricool_id": 434052383
+  },
+  {
+    "date": "2026-11-21",
+    "format": "carousel",
+    "slug": "checklist_batiment",
+    "audience": "batiment",
+    "topic": "Les 4 choses que doit avoir le site d'un artisan",
+    "post": "posts/2026-11-21_checklist_batiment/",
+    "metricool_id": 434053944
+  },
+  {
+    "date": "2026-11-22",
+    "format": "carousel",
+    "slug": "questions_clientes",
+    "audience": "beaute",
+    "topic": "4 questions que se posent tes clientes avant de réserver",
+    "post": "posts/2026-11-22_questions_clientes/",
+    "metricool_id": 434053971
   }
 ]
