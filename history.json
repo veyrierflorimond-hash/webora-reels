@@ -58,5 +58,25 @@
     "topic": "4 questions que se posent tes clientes avant de réserver",
     "post": "posts/2026-11-22_questions_clientes/",
     "metricool_id": 434053971
+  },
+  {
+    "date": "2026-11-23",
+    "slug": "concurrent_visible",
+    "audience": "tous",
+    "topic": "Ton concurrent moins bon mais plus visible sur Google",
+    "hook": "Ton concurrent est moins bon que toi.",
+    "video": "videos/2026-11-23_concurrent_visible.mp4",
+    "metricool_id": 434191741,
+    "format": "reel",
+    "story_metricool_id": 434191757
+  },
+  {
+    "date": "2026-11-23",
+    "format": "carousel",
+    "slug": "4_etapes",
+    "audience": "tous",
+    "topic": "Ton site avec Webora en 4 étapes (offre : échange + mini-audit, maquette, site complet, mise en ligne)",
+    "post": "posts/2026-11-23_4_etapes/",
+    "metricool_id": 434191802
   }
 ]
