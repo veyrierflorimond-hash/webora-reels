@@ -1,0 +1,12 @@
+{
+  "tag": "BEAUTÉ & BIEN-ÊTRE",
+  "cover": ["4 questions", "que se posent", "*tes clientes*"],
+  "cover_sub": "avant de réserver chez toi.",
+  "slides": [
+    {"title": "« Elle propose quoi exactement ? »", "body": "Si ta cliente doit te demander la liste de tes prestations, elle hésite déjà.", "fix": "Une page prestations claire, classée par catégorie."},
+    {"title": "« C'est combien ? »", "body": "C'est LA question que tu reçois sans arrêt en message, souvent en plein soin.", "fix": "Tes tarifs affichés : moins de messages, plus de réservations."},
+    {"title": "« Elle travaille bien ? »", "body": "Avant de réserver, une cliente veut voir tes réalisations : ongles, soins, résultats.", "fix": "Une galerie photo de tes plus belles réalisations."},
+    {"title": "« Elle a de la place quand ? »", "body": "Si elle doit attendre ta réponse jusqu'au soir, elle réserve ailleurs.", "fix": "Un bouton de demande de rendez-vous, ouvert 24h/24."}
+  ],
+  "cta_lines": ["Ton site y répond", "*à ta place*."]
+}

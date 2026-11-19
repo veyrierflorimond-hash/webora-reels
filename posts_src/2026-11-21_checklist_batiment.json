@@ -1,0 +1,12 @@
+{
+  "tag": "ARTISANS DU BÂTIMENT",
+  "cover": ["Ton site", "d'artisan doit", "avoir *ces 4 choses*"],
+  "cover_sub": "Sinon, le client passe au suivant.",
+  "slides": [
+    {"title": "Tes réalisations en photos", "body": "Avant / après, chantiers terminés : c'est ce qui rassure le client et le décide à t'appeler.", "fix": "Une galerie claire, classée par type de travaux."},
+    {"title": "Ta zone d'intervention", "body": "Le client veut savoir tout de suite si tu interviens chez lui. Sinon, il cherche ailleurs.", "fix": "Tes villes et ton secteur affichés dès la page d'accueil."},
+    {"title": "Un bouton devis bien visible", "body": "Sur son téléphone, le client doit pouvoir te demander un devis en deux clics, même le soir.", "fix": "Un formulaire simple, accessible depuis chaque page."},
+    {"title": "Les avis de tes clients", "body": "Ce que disent tes anciens clients pèse plus que n'importe quel discours.", "fix": "Tes avis Google affichés directement sur ton site."}
+  ],
+  "cta_lines": ["On s'occupe", "de *tout ça* pour toi."]
+}
