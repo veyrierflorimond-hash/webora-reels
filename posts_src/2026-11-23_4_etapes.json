@@ -1,0 +1,12 @@
+{
+  "tag": "ARTISANS & INDÉPENDANTS",
+  "cover": ["Ton site avec", "Webora,", "en *4 étapes*"],
+  "cover_sub": "Et tu n'as rien de technique à gérer.",
+  "slides": [
+    {"title": "Un premier échange", "body": "On parle de ton activité, de tes clients et de ce que tu veux mettre en avant. Où que tu sois en France.", "fix": "Un mini-audit des points à améliorer sur ta visibilité."},
+    {"title": "La maquette", "body": "On te présente la maquette de ton site : la structure, le style, ce que verront tes clients.", "fix": "Tu vois ton site avant qu'il soit construit."},
+    {"title": "Ton site complet", "body": "Si la maquette te plaît, on crée ton site sur mesure : 5 pages minimum, travaillées dans le détail.", "fix": "Tes services, tes réalisations, ta zone, tes contacts."},
+    {"title": "La mise en ligne", "body": "Ton site est livré en 3 jours maximum. Domaine, hébergement, maintenance et référencement Google sont inclus.", "fix": "Et les modifications après la mise en ligne aussi."}
+  ],
+  "cta_lines": ["Toi, tu bosses.", "On s'occupe *du reste*."]
+}
