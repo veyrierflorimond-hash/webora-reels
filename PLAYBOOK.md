@@ -203,11 +203,23 @@ Une publication par jour, en **carrousel** (couverture + 3 à 5 slides + slide f
 
 ## 10. Ce que l'on sait de l'offre Webora (ne rien affirmer d'autre)
 
-- Webora crée des **sites vitrines** et des **boutiques en ligne (shop)**, selon les besoins du client.
+- Webora crée des **sites vitrines** et des **boutiques en ligne (shop)**, **sur mesure**, selon les besoins du client.
 - Clients : artisans du bâtiment, métiers de la beauté et du bien-être (centres de soins, spas, onglerie, esthéticiennes…),
-  indépendants.
-- Ce que le site apporte (angle de communication) : visibilité sur Google, mise en avant des services et des réalisations,
-  demandes de devis / de rendez-vous même quand le client est occupé, ne plus laisser filer de clients.
-- Tarif : existe, mais **ne jamais l'afficher** dans les contenus (il se donne en message privé).
-- Infos à compléter par Florimond (tant qu'elles ne sont pas remplies, ne pas en parler) : délai de livraison,
-  ce qui est inclus (nom de domaine, hébergement, maintenance, référencement local, fiche Google…), zone géographique.
+  indépendants — **partout en France** (tout se fait à distance).
+- **Livraison : site livré en 3 jours maximum.**
+- **Inclus** : nom de domaine, hébergement, maintenance, référencement Google (SEO), modifications après la mise en ligne.
+- **Site complet de 5 pages minimum**, travaillé dans le détail selon les besoins du client.
+- **Comment ça se passe** :
+  1. premier échange avec un **mini-audit** des points à améliorer sur sa visibilité ;
+  2. **maquette** du site ;
+  3. si le client valide, **création du site complet** (5 pages minimum, sur mesure) ;
+  4. **mise en ligne**.
+- Angle de communication : visibilité sur Google, mise en avant des services et des réalisations, demandes de devis /
+  de rendez-vous même quand le client est occupé, ne plus laisser filer de clients.
+- **Ne jamais mentionner** : le tarif (donné en message privé), la création de fiche Google (option en plus, discutée en privé).
+  Ne pas dire que l'audit ou la maquette sont « gratuits » ou « offerts » (non précisé).
+
+Idées de contenus tirées de l'offre (Reels ou carrousels) : « Ton site en ligne en 3 jours », « Comment ça se passe
+avec Webora, en 4 étapes », « Ce qui est inclus dans ton site » (domaine, hébergement, maintenance, référencement,
+modifications), « Le mini-audit : ce qu'on regarde sur ta visibilité », « Tu n'as rien à gérer après la mise en ligne »,
+« 5 pages minimum : ce qu'on met dedans pour un(e) <métier> », « Où que tu sois en France ».
