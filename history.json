@@ -78,5 +78,25 @@
     "topic": "Ton site avec Webora en 4 étapes (offre : échange + mini-audit, maquette, site complet, mise en ligne)",
     "post": "posts/2026-11-23_4_etapes/",
     "metricool_id": 434191802
+  },
+  {
+    "date": "2026-11-24",
+    "slug": "devis_dimanche",
+    "audience": "batiment",
+    "topic": "Devis demandé le dimanche soir, le client part chez celui qu'il trouve sur Google",
+    "hook": "Dimanche soir, un client cherche un artisan.",
+    "video": "videos/2026-11-24_devis_dimanche.mp4",
+    "metricool_id": 435541697,
+    "format": "reel",
+    "story_metricool_id": 435541710
+  },
+  {
+    "date": "2026-11-24",
+    "format": "carousel",
+    "slug": "idees_recues",
+    "audience": "batiment",
+    "topic": "4 idées reçues qui font perdre des clients (mythes/réalité : bouche-à-oreille, compliqué, des semaines, Facebook)",
+    "post": "posts/2026-11-24_idees_recues/",
+    "metricool_id": 435541733
   }
 ]
