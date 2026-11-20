@@ -65,6 +65,19 @@ Structure (types de scènes disponibles dans `engine/build_reel.py`) :
 | 5 | `cta` | phrase de conclusion + la phrase fixe de fin |
 
 Variantes possibles : remplacer 2 ou 3 par des `statement` (texte plein écran, fond `dark` ou `light`, `pill` optionnelle).
+
+**Varier l'interface (souhait de Florimond)** : mêmes couleurs, mais pas toujours le même décor. Choisir les scènes
+**selon le sujet** (pas de changement pour le plaisir) et éviter de reprendre exactement la même suite de scènes que
+les Reels précédents (champ `interfaces` de `history.json`). Interfaces disponibles en plus de `phone` / `search` / `statement` :
+
+| type | quand l'utiliser | champs |
+|---|---|---|
+| `chat` | une conversation (cliente qui pose des questions, client qui attend une réponse) | `lines`, `contact`, `status`, `messages` [{`at`, `from`: `client`/`moi`, `text`}] (≤ 4 messages courts), `alert` {`at`, `text`} optionnel (pastille rouge) |
+| `site` | montrer ce que voit le client sur un site (fond clair) ; la souris clique sur le bouton | `lines`, `name` (fictif ou « Ton entreprise »), `url`, `tagline`, `button`, `gallery` (3 libellés), `click_at`, `notif` {`at`, `title`, `body`} |
+| `compare` | avant / après, sans site / avec un site | `lines`, `left_title`, `right_title`, `rows` [{`at`, `left`, `right`}] (3 lignes max, ≤ 4 mots chacune) ; la carte de droite arrive 0,35 s après `at` |
+
+Les `at` se synchronisent sur les mots comme ailleurs. `site` peut remplacer `solution` ; `chat` peut remplacer `phone` ;
+`compare` peut remplacer `statement` ou `solution`. Garder toujours `hook` au début et `cta` à la fin.
 Texte à l'écran : ≤ 6 mots par ligne, phrases courtes, tutoiement. La voix peut dire plus que l'écran.
 
 ## 4. Générer et vérifier la voix (Speko)
@@ -129,7 +142,8 @@ Hashtags (5, choisir selon la cible) :
 
 1. Vérifier dans Metricool (`getScheduledPosts`, brandId 8213553, Europe/Paris) le **prochain jour libre**
    à partir de demain ; ne jamais programmer deux Reels le même jour.
-2. Ajouter à `history.json` : `{"date", "slug", "audience", "topic", "hook", "video", "metricool_id"}`.
+2. Ajouter à `history.json` : `{"date", "slug", "audience", "topic", "hook", "video", "metricool_id", "interfaces"}`
+   (`interfaces` = liste des types de scènes dans l'ordre, pour varier d'un Reel à l'autre).
 3. `git add videos/… scenarios/… history.json && git commit && git push` (branche `main`).
 4. Vérifier le lien : `curl -sIL https://raw.githubusercontent.com/veyrierflorimond-hash/webora-reels/main/videos/<fichier>`
    → 200 + `content-length` = taille du fichier.

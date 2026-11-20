@@ -19,6 +19,15 @@ Scenario format (see PLAYBOOK.md for the full guide):
     {"type": "cta", "lines": ["Toi, tu bosses.", "Ton site prend", "*les demandes*."], "voice": "v/5.wav"}
   ]
 }
+Extra interfaces (to vary the look):
+    {"type": "chat", "lines": ["Elle t'écrit", "pendant un *soin* :"], "contact": "Nouvelle cliente", "status": "en ligne",
+     "messages": [{"at": 0.8, "text": "Vous avez des photos ?"}, {"at": 1.6, "from": "moi", "text": "..."}],
+     "alert": {"at": 3.2, "text": "Vu · sans réponse"}}
+    {"type": "site", "lines": ["Ton *site*,", "ouvert 24h/24 :"], "name": "Ton entreprise", "url": "www.ton-entreprise.fr",
+     "tagline": "Rénovation et dépannage", "gallery": ["Salle de bain", "Avant / après", "Dépannage"],
+     "click_at": 2.4, "notif": {"at": 2.9, "title": "Nouvelle demande de devis", "body": "..."}}
+    {"type": "compare", "lines": ["Même artisan,", "deux *résultats*."], "left_title": "Sans site", "right_title": "Avec un site",
+     "rows": [{"at": 0.8, "left": "Introuvable sur Google", "right": "Visible sur Google"}]}
 - "*mot*" = mot surligné en turquoise.
 - Every "at" is in REAL seconds from the start of its scene. The voice of a scene starts at 0.1 s,
   so a word that starts at W ms in the voice clip happens at 0.1 + W/1000.
@@ -31,11 +40,13 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from engine import GREEN, RED, SPEED, mux, render  # noqa: E402
-from scenes import cta, hook, phone_scene, search_scene, solution, statement  # noqa: E402
+from scenes import (chat_scene, compare_scene, cta, hook, phone_scene, search_scene, site_scene,  # noqa: E402
+                    solution, statement)
 
 VOICE_OFFSET = 0.1
 TAIL = 0.35
-MIN_DUR = {"hook": 2.2, "phone": 3.6, "search": 3.7, "statement": 2.4, "solution": 3.9, "cta": 3.6}
+MIN_DUR = {"hook": 2.2, "phone": 3.6, "search": 3.7, "statement": 2.4, "solution": 3.9, "cta": 3.6,
+           "chat": 3.6, "site": 4.0, "compare": 3.8}
 TYPING_END = 1.55  # real seconds: the search bar finishes typing here
 
 
@@ -100,6 +111,29 @@ def build_scene(sc):
         if sc.get("title"):
             kw["title"] = sc["title"]
         return solution(sc["checks"], (k(nt["at"]), nt["title"], nt["body"]), **kw), "light", ats
+    if t == "chat":
+        msgs = []
+        for m in sc["messages"]:
+            msgs.append((k(m["at"]), m.get("from", "client") == "moi", m["text"]))
+            ats.append(m["at"])
+        alert = sc.get("alert")
+        if alert:
+            ats.append(alert["at"])
+        return chat_scene(sc.get("lines", []), sc.get("contact", "Nouveau client"), sc.get("status", "en ligne"),
+                          msgs, (k(alert["at"]), alert["text"]) if alert else None), sc.get("bg", "dark"), ats
+    if t == "site":
+        nt = sc["notif"]
+        ats += [nt["at"], sc["click_at"]]
+        return site_scene(sc.get("lines", []), sc["name"], sc.get("url", "www.ton-entreprise.fr"), sc["tagline"],
+                          sc.get("button", "Demander un devis"), sc.get("gallery", ["Rénovation", "Avant / après", "Chantiers"]),
+                          k(sc["click_at"]), (k(nt["at"]), nt["title"], nt["body"])), "light", ats
+    if t == "compare":
+        rows = []
+        for r in sc["rows"]:
+            rows.append((k(r["at"]), r["left"], r["right"]))
+            ats.append(r["at"] + 0.35)
+        return compare_scene(sc.get("lines", []), sc.get("left_title", "Sans site"), sc.get("right_title", "Avec un site"),
+                             rows), sc.get("bg", "dark"), ats
     if t == "cta":
         return cta(sc["lines"]), "dark", [2.75 / SPEED]
     raise ValueError("unknown scene type: %s" % t)

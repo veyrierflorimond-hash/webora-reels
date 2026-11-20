@@ -68,7 +68,15 @@
     "video": "videos/2026-11-23_concurrent_visible.mp4",
     "metricool_id": 434191741,
     "format": "reel",
-    "story_metricool_id": 434191757
+    "story_metricool_id": 434191757,
+    "interfaces": [
+      "hook",
+      "search",
+      "statement",
+      "statement",
+      "solution",
+      "cta"
+    ]
   },
   {
     "date": "2026-11-23",
@@ -88,7 +96,14 @@
     "video": "videos/2026-11-24_devis_dimanche.mp4",
     "metricool_id": 435541697,
     "format": "reel",
-    "story_metricool_id": 435541710
+    "story_metricool_id": 435541710,
+    "interfaces": [
+      "hook",
+      "search",
+      "statement",
+      "solution",
+      "cta"
+    ]
   },
   {
     "date": "2026-11-24",

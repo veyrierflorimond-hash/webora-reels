@@ -1,0 +1,14 @@
+{"scenes": [
+ {"type": "chat", "lines": ["Elle t'écrit", "pendant un *soin* :"], "contact": "Nouvelle cliente", "status": "en ligne",
+  "messages": [{"at": 0.8, "text": "Bonjour ! Vous avez des photos de vos poses ?"},
+               {"at": 1.6, "text": "Et vous avez une dispo samedi ?"},
+               {"at": 2.4, "text": "Bon, je vais voir ailleurs…"}],
+  "alert": {"at": 3.2, "text": "Vu · sans réponse"}},
+ {"type": "site", "lines": ["Ton *site*,", "ouvert 24h/24 :"], "name": "Plomberie Durand", "url": "www.plomberie-durand.fr",
+  "tagline": "Dépannage et rénovation de salle de bain", "gallery": ["Salle de bain", "Avant / après", "Dépannage"],
+  "click_at": 2.4, "notif": {"at": 2.9, "title": "Nouvelle demande de devis", "body": "Rénovation salle de bain"}},
+ {"type": "compare", "lines": ["Même artisan,", "deux *résultats*."],
+  "rows": [{"at": 0.8, "left": "Introuvable sur Google", "right": "Visible sur Google"},
+           {"at": 1.6, "left": "Photos dans le téléphone", "right": "Réalisations en ligne"},
+           {"at": 2.4, "left": "Appels manqués", "right": "Demandes de devis 24h/24"}]}
+]}
