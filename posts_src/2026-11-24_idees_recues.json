@@ -1,0 +1,35 @@
+{
+  "tag": "ARTISANS DU BÂTIMENT",
+  "cover": [
+    "4 idées reçues",
+    "qui te font",
+    "*perdre* des clients"
+  ],
+  "cover_sub": "Tu en as sûrement déjà pensé une.",
+  "slides": [
+    {
+      "title": "« Le bouche-à-oreille me suffit »",
+      "body": "Même recommandé, le client va souvent vérifier sur Google avant d'appeler. S'il ne trouve rien sur toi, le doute s'installe.",
+      "fix": "Un site qui confirme ce qu'on dit de toi, avec tes réalisations."
+    },
+    {
+      "title": "« Un site, c'est compliqué à gérer »",
+      "body": "Tu n'as pas envie de passer tes soirées devant un ordinateur après tes journées sur les chantiers.",
+      "fix": "Hébergement, maintenance et modifications inclus : tu n'as rien à gérer."
+    },
+    {
+      "title": "« Ça va prendre des semaines »",
+      "body": "Tu imagines un projet interminable, avec des allers-retours sans fin, alors tu repousses.",
+      "fix": "Livré en 3 jours maximum : ton site complet, sur mesure."
+    },
+    {
+      "title": "« Ma page Facebook suffit »",
+      "body": "Sur Facebook, ton travail se perd dans le fil. Et le client qui cherche un artisan sur Google ne le voit pas.",
+      "fix": "Un site visible sur Google, avec tes chantiers bien rangés."
+    }
+  ],
+  "cta_lines": [
+    "Un site simple",
+    "qui *travaille* pour toi."
+  ]
+}

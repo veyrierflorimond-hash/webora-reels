@@ -1,0 +1,11 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Dimanche soir,", "un client", "cherche", "un *artisan*."], "voice": "../work/2026-11-24/v0.wav"},
+ {"type": "search", "lines": ["Il tape sur Google :"], "query": "plombier près de chez moi",
+  "cards": [{"at": 2.0, "name": "Plomberie Durand", "url": "www.plomberie-durand.fr", "rating": "4,6 · 24 avis"},
+            {"at": 2.25, "name": "Sanitaire Martin", "url": "www.sanitaire-martin.fr", "rating": "4,5 · 18 avis"}],
+  "ghost_at": 3.5, "voice": "../work/2026-11-24/v1.wav"},
+ {"type": "statement", "lines": ["Lundi matin,", "il a déjà", "*son devis*."], "pill": "Chez un autre.", "voice": "../work/2026-11-24/v2.wav"},
+ {"type": "solution", "checks": ["Visible même le dimanche", "Formulaire de devis", "Tes réalisations en photos"],
+  "notif": {"at": 1.6, "title": "Nouvelle demande de devis", "body": "Fuite sous l'évier · dim. 21:47"}, "voice": "../work/2026-11-24/v3.wav"},
+ {"type": "cta", "lines": ["Ton site bosse", "même quand", "tu te *reposes*."], "voice": "../work/2026-11-24/v4.wav"}
+]}
