@@ -1,0 +1,13 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Elle veut", "voir ton", "*travail*", "d'abord."], "voice": "../work/2026-11-25/v0.wav"},
+ {"type": "chat", "lines": ["Elle veut voir", "tes *photos* :"], "contact": "Nouvelle cliente", "status": "en ligne",
+  "messages": [{"at": 1.1, "text": "Bonjour ! Vous avez des photos de vos poses ?"},
+               {"at": 3.9, "text": "Vous êtes là ?"},
+               {"at": 4.8, "text": "Bon, je vais voir ailleurs…"}],
+  "alert": {"at": 5.3, "text": "Sans réponse"}, "voice": "../work/2026-11-25/v1.wav"},
+ {"type": "statement", "bg": "dark", "lines": ["Elle réserve", "chez celle", "qui *montre*", "son travail."], "pill": "Pas chez toi.", "voice": "../work/2026-11-25/v2.wav"},
+ {"type": "site", "lines": ["Ton *site*", "montre ton travail :"], "name": "Ton institut", "url": "www.ton-institut.fr",
+  "tagline": "Ongles, soins visage et regard", "button": "Prendre rendez-vous", "gallery": ["Poses gel", "Soins visage", "Nail art"],
+  "click_at": 4.2, "notif": {"at": 4.65, "title": "Demande de rendez-vous", "body": "Pose gel · samedi matin"}, "voice": "../work/2026-11-25/v3.wav"},
+ {"type": "cta", "lines": ["Ton travail", "parle", "*pour toi*."], "voice": "../work/2026-11-25/v4.wav"}
+]}

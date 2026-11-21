@@ -1,0 +1,12 @@
+{
+  "tag": "PROTHÉSISTES ONGULAIRES",
+  "cover": ["Prothésiste ongulaire :", "ce que ton site", "doit *montrer*"],
+  "cover_sub": "pour que tes clientes réservent chez toi.",
+  "slides": [
+    {"title": "Tes plus belles poses", "body": "Ta cliente choisit avec les yeux. Avant de réserver, elle veut voir tes poses, tes couleurs, ton nail art.", "fix": "Une galerie de tes réalisations, classée par style."},
+    {"title": "Tes prestations, bien claires", "body": "Pose gel, remplissage, semi-permanent, nail art… Si elle doit te demander ce que tu proposes, elle hésite déjà.", "fix": "Une page prestations claire, une ligne par soin."},
+    {"title": "Où te trouver, et quand", "body": "Ton adresse, tes horaires, comment venir. Sans ces infos, elle passe à l'onglerie suivante.", "fix": "Adresse, horaires et plan visibles en un coup d'œil."},
+    {"title": "Un moyen simple de réserver", "body": "Le soir, sur son canapé, elle veut réserver tout de suite. Pas attendre ta réponse jusqu'au lendemain.", "fix": "Un bouton de demande de rendez-vous, ouvert 24h/24."}
+  ],
+  "cta_lines": ["Tes poses méritent", "d'être *vues*."]
+}
