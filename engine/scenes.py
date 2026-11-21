@@ -320,3 +320,49 @@ def compare_scene(top_lines, left_title, right_title, rows):
                 paste(c, compare_row(lab, good), x + (1 - clamp(p)) * (60 if good else -60), y, clamp(p) * g, "mt")
             y += 175
     return fn
+
+
+# ---------- "présentation" format (agency presentation Reels) ----------
+def words_scene(items, size=100, pill_spec=None, dark=True):
+    """Big stacked lines that pop in one by one on the voice. items: list of (start, line). pill_spec: (start, label)."""
+    col, hl = (WHITE, TURQ) if dark else (DARK, TEAL)
+    n = len(items) + (1 if pill_spec else 0)
+    y0 = 960 - n * size * 1.3 / 2
+
+    def fn(c, t, d, g):
+        y = y0
+        for k, (st, line) in enumerate(items):
+            cue("pop" if k % 2 == 0 else "pop_hi", t, st)
+            p = out_back(prog(t, st, 0.35), 2.0)
+            paste(c, text(line, size, col, hl), W / 2, y + (1 - clamp(p)) * 40, clamp(p) * g, "mt", scale=max(0.01, 0.7 + 0.3 * p))
+            y += size * 1.3
+        if pill_spec:
+            st, label = pill_spec
+            cue("success", t, st)
+            p = out_back(prog(t, st, 0.45))
+            paste(c, pill(label, TURQ if dark else DARK, WHITE, 46, 50, 110), W / 2, y + 30, clamp(p) * g, "mt", scale=max(0.01, p))
+    return fn
+
+
+def intro_scene(items, sub=None, logo_at=0.15):
+    """Agency presentation on a light background: logo, then lines on the voice. items: list of (start, line, size)."""
+    lg = logo(380)
+
+    def fn(c, t, d, g):
+        cue("shimmer", t, logo_at)
+        p = out_back(prog(t, logo_at, 0.6), 1.3)
+        paste(c, lg, W / 2, 560, clamp(p) * g, "mm", scale=max(0.01, p * (1 + 0.012 * math.sin(t * 2.2))))
+        y = 820
+        for st, line, size in items:
+            cue("pop", t, st)
+            a, dy = appear(t, st, 0.4, 50)
+            paste(c, text(line, size, DARK, TEAL), W / 2, y + dy, a * g, "mt")
+            y += size * 1.25
+        if sub:
+            st, lines_ = sub
+            a, dy = appear(t, st, 0.45, 40)
+            y += 30
+            for l in lines_:
+                paste(c, text(l, 50, TEAL, TURQ, "Bold"), W / 2, y + dy, a * g, "mt")
+                y += 66
+    return fn
