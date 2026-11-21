@@ -113,5 +113,32 @@
     "topic": "4 idées reçues qui font perdre des clients (mythes/réalité : bouche-à-oreille, compliqué, des semaines, Facebook)",
     "post": "posts/2026-11-24_idees_recues/",
     "metricool_id": 435541733
+  },
+  {
+    "date": "2026-11-25",
+    "slug": "realisations_beaute",
+    "audience": "beaute",
+    "topic": "La cliente veut voir tes réalisations avant de réserver, elle réserve chez celle qui montre son travail",
+    "hook": "Elle veut voir ton travail avant de réserver.",
+    "video": "videos/2026-11-25_realisations_beaute.mp4",
+    "metricool_id": 436654036,
+    "format": "reel",
+    "story_metricool_id": 436654050,
+    "interfaces": [
+      "hook",
+      "chat",
+      "statement",
+      "site",
+      "cta"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "format": "carousel",
+    "slug": "site_prothesiste",
+    "audience": "beaute",
+    "topic": "Par métier — prothésiste ongulaire : ce que ton site doit montrer (poses, prestations, adresse/horaires, demande de RDV)",
+    "post": "posts/2026-11-25_site_prothesiste/",
+    "metricool_id": 436654064
   }
 ]
