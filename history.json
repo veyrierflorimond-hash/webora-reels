@@ -27,10 +27,11 @@
     "audience": "beaute",
     "topic": "Messages pendant un soin, la cliente réserve ailleurs",
     "hook": "Pendant ton soin, tu perds des clientes.",
-    "video": "videos/2026-11-22_beaute_spa.mp4",
-    "metricool_id": 434042224,
+    "video": "videos/2026-11-22_beaute_spa_musique.mp4",
+    "metricool_id": 436704499,
     "format": "reel",
-    "story_metricool_id": 434050654
+    "story_metricool_id": 436704724,
+    "music_variant": 1
   },
   {
     "date": "2026-11-20",
@@ -65,10 +66,10 @@
     "audience": "tous",
     "topic": "Ton concurrent moins bon mais plus visible sur Google",
     "hook": "Ton concurrent est moins bon que toi.",
-    "video": "videos/2026-11-23_concurrent_visible.mp4",
-    "metricool_id": 434191741,
+    "video": "videos/2026-11-23_concurrent_visible_musique.mp4",
+    "metricool_id": 436704517,
     "format": "reel",
-    "story_metricool_id": 434191757,
+    "story_metricool_id": 436704734,
     "interfaces": [
       "hook",
       "search",
@@ -76,7 +77,8 @@
       "statement",
       "solution",
       "cta"
-    ]
+    ],
+    "music_variant": 2
   },
   {
     "date": "2026-11-23",
@@ -93,17 +95,18 @@
     "audience": "batiment",
     "topic": "Devis demandé le dimanche soir, le client part chez celui qu'il trouve sur Google",
     "hook": "Dimanche soir, un client cherche un artisan.",
-    "video": "videos/2026-11-24_devis_dimanche.mp4",
-    "metricool_id": 435541697,
+    "video": "videos/2026-11-24_devis_dimanche_musique.mp4",
+    "metricool_id": 436704534,
     "format": "reel",
-    "story_metricool_id": 435541710,
+    "story_metricool_id": 436704746,
     "interfaces": [
       "hook",
       "search",
       "statement",
       "solution",
       "cta"
-    ]
+    ],
+    "music_variant": 3
   },
   {
     "date": "2026-11-24",
@@ -120,17 +123,18 @@
     "audience": "beaute",
     "topic": "La cliente veut voir tes réalisations avant de réserver, elle réserve chez celle qui montre son travail",
     "hook": "Elle veut voir ton travail avant de réserver.",
-    "video": "videos/2026-11-25_realisations_beaute.mp4",
-    "metricool_id": 436654036,
+    "video": "videos/2026-11-25_realisations_beaute_musique.mp4",
+    "metricool_id": 436704561,
     "format": "reel",
-    "story_metricool_id": 436654050,
+    "story_metricool_id": 436704761,
     "interfaces": [
       "hook",
       "chat",
       "statement",
       "site",
       "cta"
-    ]
+    ],
+    "music_variant": 0
   },
   {
     "date": "2026-11-25",
