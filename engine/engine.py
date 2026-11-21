@@ -395,6 +395,9 @@ def press(t, clicks):
 
 
 # ---------- render ----------
+STYLE = {"name": "classic", "cams": []}  # build_reel sets {"name": "dynamic", "cams": [...]} for the dynamic style
+
+
 def render(scenes, out_path, preview_times=None, preview_dir=None):
     """scenes: list of (duration, bgkind, draw_fn(canvas, t, dur, g)).
     Background crossfades over 0.4 s between scenes; content fades out over last 0.3 s."""
@@ -423,6 +426,8 @@ def render(scenes, out_path, preview_times=None, preview_dir=None):
         CUE["T0"] = starts[i]; CUE["k"] = k
         if i > 0:
             cue("whoosh", t * k, 0.0)
+        if STYLE["name"] == "dynamic":
+            return dyn_frame(i, d, kind, fn, k, t, T)
         canvas = background(kind, T)
         if i > 0 and t < 0.25 and scenes[i - 1][1] != kind:
             canvas = Image.blend(background(scenes[i - 1][1], T), canvas, in_out(t / 0.25))
@@ -447,6 +452,42 @@ def render(scenes, out_path, preview_times=None, preview_dir=None):
         if a < 0.999:
             layer.putalpha(layer.getchannel("A").point(lambda v: int(v * a)))
         canvas.alpha_composite(layer)
+        return canvas.convert("RGB")
+
+    def dyn_frame(i, d, kind, fn, k, t, T):
+        import dynamic as dy
+        canvas = dy.background(kind, T)
+        if i > 0 and t < 0.2 and scenes[i - 1][1] != kind:
+            canvas = Image.blend(dy.background(scenes[i - 1][1], T), canvas, in_out(t / 0.2))
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        fn(layer, t * k, d * k, 1.0)
+        cams = STYLE.get("cams") or []
+        layer = dy.camera(layer, cams[i] if i < len(cams) else None, t, d, T)
+        z, rot, a = 1 + 0.05 * (t / d), 0.0, 1.0
+        if i > 0:
+            zi, rot, ai = dy.transition_in(t); z *= zi; a = ai
+        if i < last:
+            zo, ao = dy.transition_out(d - t); z *= zo; a *= ao
+        sx = sy = 0.0
+        for et, name in (CUE["events"] or [])[-12:]:
+            if name in ("thud", "error") and 0 <= T - et < 0.3:
+                f = 1 - (T - et) / 0.3
+                sx += 18 * f * math.sin((T - et) * 90); sy += 12 * f * math.cos((T - et) * 70)
+        if abs(z - 1) > 1e-3 or sx or sy or rot:
+            zw, zh = int(W * z), int(H * z)
+            big = layer.resize((zw, zh), Image.BILINEAR)
+            if rot:
+                big = big.rotate(rot, Image.BILINEAR)
+            x0, y0 = (zw - W) / 2 - sx, (zh - H) / 2 - sy
+            if z >= 1:
+                layer = big.crop((int(x0), int(y0), int(x0) + W, int(y0) + H))
+            else:
+                layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); layer.alpha_composite(big, (int(-x0), int(-y0)))
+        if a < 0.999:
+            layer.putalpha(layer.getchannel("A").point(lambda v: int(v * a)))
+        canvas.alpha_composite(layer)
+        if i > 0:
+            dy.flash(canvas, t)
         return canvas.convert("RGB")
 
     if preview_times:
