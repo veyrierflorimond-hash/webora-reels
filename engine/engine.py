@@ -477,14 +477,23 @@ def render(scenes, out_path, preview_times=None, preview_dir=None):
     mux(out_path, total)
 
 
-def mux(out_path, total=None, extra_audio=None):
+def mux(out_path, total=None, extra_audio=None, music=None):
     import json, sfx
     base = out_path[:-4]
     info = json.load(open(base + ".events.json"))
     sfx.mix(info["events"], info["total"], base + ".sfx.wav")
     tmp = base + ".tmp.mp4"
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", base + ".video.mp4", "-i", base + ".sfx.wav"]
-    if extra_audio:
+    if extra_audio and music:
+        # music sits ~14 dB under the voice and ducks further whenever voice or sound effects play
+        cmd += ["-i", extra_audio, "-i", music, "-filter_complex",
+                "[1:a]volume=0.3[s];[2:a]aresample=44100,pan=stereo|c0=c0|c1=c0[v];"
+                "[s][v]amix=inputs=2:duration=first:normalize=0[fg];[fg]asplit[fg1][key];"
+                "[3:a]loudnorm=I=-27:TP=-6,aresample=44100[m];"
+                "[m][key]sidechaincompress=threshold=0.05:ratio=4:attack=30:release=350[md];"
+                "[fg1][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.85:level=false[a]",
+                "-map", "0:v", "-map", "[a]"]
+    elif extra_audio:
         cmd += ["-i", extra_audio, "-filter_complex",
                 "[1:a]volume=0.3[s];[2:a]aresample=44100,pan=stereo|c0=c0|c1=c0[v];[s][v]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.85:level=false[a]",
                 "-map", "0:v", "-map", "[a]"]

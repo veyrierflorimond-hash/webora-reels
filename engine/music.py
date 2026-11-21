@@ -44,6 +44,16 @@ def sine(f, n):
     return np.sin(2 * np.pi * f * np.arange(n) / SR).astype(np.float32)
 
 
+PROGRESSIONS = [
+    [([57, 60, 64], 45), ([53, 57, 60], 41), ([48, 52, 55], 48), ([55, 59, 62], 43)],  # Am F C G
+    [([48, 52, 55], 48), ([55, 59, 62], 43), ([57, 60, 64], 45), ([53, 57, 60], 41)],  # C G Am F
+    [([53, 57, 60], 41), ([55, 59, 62], 43), ([52, 55, 59], 40), ([57, 60, 64], 45)],  # F G Em Am
+    [([50, 53, 57], 38), ([55, 59, 62], 43), ([48, 52, 55], 48), ([57, 60, 64], 45)],  # Dm G C Am
+]
+PATTERNS = [[0, 1, 2, 1, 0, 2, 1, 2], [0, 2, 1, 2, 0, 2, 1, 2], [2, 1, 0, 1, 2, 1, 0, 1]]
+VARIANTS = len(PROGRESSIONS) * len(PATTERNS)
+
+
 def make(seconds, bpm=112, seed=0):
     rng = np.random.default_rng(seed)
     beat = 60.0 / bpm
@@ -51,9 +61,11 @@ def make(seconds, bpm=112, seed=0):
     N = int(seconds * SR)
     pad = np.zeros(N, np.float32); arp = np.zeros(N, np.float32)
     bass = np.zeros(N, np.float32); drums = np.zeros(N, np.float32)
-    # Am - F - C - G  (bright, "positive" pop progression)
-    chords = [[57, 60, 64], [53, 57, 60], [48, 52, 55], [55, 59, 62]]
-    roots = [45, 41, 48, 43]
+    # Several bright pop progressions; the seed picks one (variant 0 = the validated first try)
+    prog = PROGRESSIONS[seed % len(PROGRESSIONS)]
+    chords = [c for c, _ in prog]
+    roots = [r for _, r in prog]
+    pattern = PATTERNS[(seed // len(PROGRESSIONS)) % len(PATTERNS)]
     nbars = int(np.ceil(seconds / bar))
     for b in range(nbars):
         c = chords[b % 4]; r = roots[b % 4]
@@ -73,7 +85,6 @@ def make(seconds, bpm=112, seed=0):
             x = (sine(note(m), k) + 0.25 * sine(note(m) * 2, k)) * adsr(k, 0.005, 0.15, 0.6, 0.08)
             bass[i0:i0 + k] += x[:N - i0] * 0.55
         # pluck arpeggio in 8ths
-        pattern = [0, 1, 2, 1, 0, 2, 1, 2]
         for j in range(8):
             i0 = s0 + int(j * beat / 2 * SR); k = int(0.35 * SR)
             if i0 >= N:

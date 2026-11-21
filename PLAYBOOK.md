@@ -34,6 +34,11 @@ indépendants en général.
 6. **Exactement 5 hashtags** (limite Instagram), à la fin de la description.
 7. Case **« contenu généré par IA »** toujours cochée (`isAiGenerated: true`) : la voix est synthétique.
 8. **Voix** : ne jamais retoucher l'audio (pas d'accélération, pas de compression maison) — ça sonne « IA ».
+9. **Musique de fond** (validée par Florimond le 21/11/2026) : chaque Reel a une petite musique pop générée par
+   `engine/music.py` (libre de droits, aucun morceau existant), loin sous la voix et qui baisse quand la voix
+   ou les bruitages arrivent. Elle est ajoutée automatiquement par `build_reel.py` ; la mélodie change d'un Reel
+   à l'autre (12 variantes, choisies d'après le nom du fichier). On peut forcer `"music": {"variant": n}` ou
+   la couper avec `"music": false` dans le scénario.
 
 ## 2. Choisir le sujet du jour
 
@@ -118,7 +123,8 @@ python3 -I engine/build_reel.py scenarios/<date>_<slug>.json videos/<date>_<slug
 Contrôles obligatoires avant publication :
 - regarder les images de `--preview` (texte lisible, rien ne déborde, rien sous y=1440 ni collé au bord droit) ;
 - durée 13–25 s ; taille < 15 Mo ;
-- `ffmpeg -i <mp4> -af volumedetect -f null -` : max_volume ≤ −0,5 dB.
+- `ffmpeg -i <mp4> -af volumedetect -f null -` : max_volume ≤ −0,5 dB ;
+- la sortie du rendu affiche `music variant <n>` (la musique est bien présente).
 
 ## 6. Description (légende)
 
