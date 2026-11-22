@@ -144,5 +144,33 @@
     "topic": "Par métier — prothésiste ongulaire : ce que ton site doit montrer (poses, prestations, adresse/horaires, demande de RDV)",
     "post": "posts/2026-11-25_site_prothesiste/",
     "metricool_id": 436654064
+  },
+  {
+    "date": "2026-11-26",
+    "slug": "pas_le_temps",
+    "audience": "tous",
+    "topic": "« Pas le temps de m'occuper d'un site » : en ligne en 3 jours, rien à gérer, tout inclus",
+    "hook": "Pas le temps de t'occuper d'un site ?",
+    "video": "videos/2026-11-26_pas_le_temps.mp4",
+    "metricool_id": 437543418,
+    "format": "reel",
+    "story_metricool_id": 437543429,
+    "interfaces": [
+      "hook",
+      "statement",
+      "compare",
+      "solution",
+      "cta"
+    ],
+    "music_variant": 4
+  },
+  {
+    "date": "2026-11-26",
+    "format": "carousel",
+    "slug": "rassurer_client",
+    "audience": "tous",
+    "topic": "Conseils — comment rassurer un client qui ne te connaît pas (photos, présentation, services/zone, contact facile)",
+    "post": "posts/2026-11-26_rassurer_client/",
+    "metricool_id": 437543450
   }
 ]
