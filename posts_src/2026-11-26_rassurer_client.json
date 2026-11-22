@@ -1,0 +1,20 @@
+{
+  "tag": "ARTISANS & INDÉPENDANTS",
+  "cover": ["Comment *rassurer*", "un client qui", "ne te connaît pas"],
+  "cover_sub": "4 choses à lui montrer.",
+  "slides": [
+    {"title": "Montre ton travail en photos",
+     "body": "Un client qui ne te connaît pas veut d'abord voir ce que tu sais faire. Sans photos, il n'a rien pour se décider.",
+     "fix": "Une page « Réalisations » avec tes plus beaux travaux."},
+    {"title": "Présente-toi vraiment",
+     "body": "Ton nom, ton parcours, ta façon de travailler. On confie plus facilement son projet à quelqu'un qu'on connaît un peu.",
+     "fix": "Une page « Qui suis-je » simple et sincère."},
+    {"title": "Dis clairement ce que tu fais",
+     "body": "Si le client doit deviner tes services ou ta zone, il hésite. Et quand il hésite, il appelle quelqu'un d'autre.",
+     "fix": "Une page par service, avec ta zone d'intervention."},
+    {"title": "Rends le contact facile",
+     "body": "Un numéro introuvable ou un formulaire compliqué, et le client abandonne avant même de t'écrire.",
+     "fix": "Un bouton de demande de devis ou de rendez-vous sur chaque page."}
+  ],
+  "cta_lines": ["La confiance", "commence *en ligne*."]
+}
