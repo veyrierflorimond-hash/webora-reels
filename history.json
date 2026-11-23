@@ -172,5 +172,33 @@
     "topic": "Conseils — comment rassurer un client qui ne te connaît pas (photos, présentation, services/zone, contact facile)",
     "post": "posts/2026-11-26_rassurer_client/",
     "metricool_id": 437543450
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "recommande_introuvable",
+    "audience": "batiment",
+    "topic": "On t'a recommandé, le client vérifie sur Google, ne trouve rien et appelle un autre",
+    "hook": "On t'a recommandé. Pourtant, il appelle un autre.",
+    "video": "videos/2026-11-27_recommande_introuvable.mp4",
+    "metricool_id": 438758234,
+    "format": "reel",
+    "story_metricool_id": 438758294,
+    "interfaces": [
+      "hook",
+      "chat",
+      "search",
+      "site",
+      "cta"
+    ],
+    "music_variant": 5
+  },
+  {
+    "date": "2026-11-27",
+    "format": "carousel",
+    "slug": "chantiers_telephone",
+    "audience": "batiment",
+    "topic": "Problèmes vécus — tes plus beaux chantiers dorment dans ton téléphone (travail invisible, pas de différence, recommandation non confirmée, photos qui ne travaillent pas)",
+    "post": "posts/2026-11-27_chantiers_telephone/",
+    "metricool_id": 438758373
   }
 ]
