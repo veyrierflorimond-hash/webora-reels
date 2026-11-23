@@ -1,0 +1,36 @@
+{
+  "tag": "ARTISANS DU BÂTIMENT",
+  "cover": [
+    "Tes plus beaux",
+    "*chantiers*",
+    "dorment dans",
+    "ton téléphone"
+  ],
+  "cover_sub": "Et ça te coûte des clients.",
+  "slides": [
+    {
+      "title": "Le client ne voit pas ton travail",
+      "body": "Salles de bain, toitures, terrasses : tout est dans ta galerie photo. Pas là où le client cherche.",
+      "fix": "Une page « Réalisations » visible sur Google."
+    },
+    {
+      "title": "Tu ressembles à tous les autres",
+      "body": "Sans photos, le client n'a aucun moyen de comparer. Il choisit au hasard, ou le premier qu'il trouve.",
+      "fix": "Des photos avant / après qui montrent ce qui te rend différent."
+    },
+    {
+      "title": "Ta recommandation ne se confirme pas",
+      "body": "On t'a recommandé. Le client veut vérifier avant d'appeler, et ne trouve rien à regarder.",
+      "fix": "Un site à ton nom, avec ton travail, tes services et ta zone."
+    },
+    {
+      "title": "Tes photos ne travaillent pas pour toi",
+      "body": "Pendant que tu es sur le chantier, un concurrent montre les siens. Et c'est lui qui reçoit la demande de devis.",
+      "fix": "Un site qui montre ton travail et prend les demandes pour toi."
+    }
+  ],
+  "cta_lines": [
+    "Ton travail mérite",
+    "d'être *vu*."
+  ]
+}

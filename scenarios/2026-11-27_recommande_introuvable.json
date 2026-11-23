@@ -1,0 +1,87 @@
+{
+ "music": {
+  "variant": 5
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "On t'a",
+    "*recommandé*.",
+    "Il appelle",
+    "un autre."
+   ],
+   "voice": "../work/2026-11-27/v0.wav"
+  },
+  {
+   "type": "chat",
+   "lines": [
+    "Son voisin",
+    "lui donne ton *nom* :"
+   ],
+   "contact": "Le voisin",
+   "status": "en ligne",
+   "messages": [
+    {
+     "at": 1.0,
+     "text": "Pour ta salle de bain, appelle Moreau !"
+    },
+    {
+     "at": 2.2,
+     "text": "Il bosse super bien."
+    }
+   ],
+   "voice": "../work/2026-11-27/v1.wav"
+  },
+  {
+   "type": "search",
+   "lines": [
+    "Il te cherche",
+    "sur *Google* :"
+   ],
+   "query": "Moreau plombier Nantes",
+   "cards": [
+    {
+     "at": 1.7,
+     "name": "Plomberie Bernard",
+     "url": "www.plomberie-bernard.fr",
+     "rating": "4,7 · 21 avis"
+    }
+   ],
+   "ghost_at": 2.3,
+   "voice": "../work/2026-11-27/v2.wav"
+  },
+  {
+   "type": "site",
+   "lines": [
+    "Avec ton *site*,",
+    "il te trouve :"
+   ],
+   "name": "Moreau Plomberie",
+   "url": "www.moreau-plomberie.fr",
+   "tagline": "Plomberie et salles de bain",
+   "button": "Demander un devis",
+   "gallery": [
+    "Salles de bain",
+    "Avant / après",
+    "Dépannage"
+   ],
+   "click_at": 3.3,
+   "notif": {
+    "at": 3.75,
+    "title": "Nouvelle demande de devis",
+    "body": "Rénovation salle de bain"
+   },
+   "voice": "../work/2026-11-27/v3.wav"
+  },
+  {
+   "type": "cta",
+   "lines": [
+    "Ta réputation",
+    "mérite d'être",
+    "*trouvée*."
+   ],
+   "voice": "../work/2026-11-27/v4.wav"
+  }
+ ]
+}
