@@ -1,0 +1,12 @@
+{
+  "tag": "BEAUTÉ & BIEN-ÊTRE",
+  "cover": ["Ce qu'un site", "change dans", "ton *quotidien*"],
+  "cover_sub": "Esthéticienne, onglerie, spa : 4 changements concrets.",
+  "slides": [
+    {"title": "Moins de questions répétées", "body": "Tes prestations, ton adresse et tes horaires sont en ligne. Ta cliente trouve ses réponses sans avoir à t'écrire.", "fix": "Une page claire pour chaque soin que tu proposes."},
+    {"title": "Des demandes pendant tes soins", "body": "Tu as les mains prises ? Ta cliente t'envoie sa demande de rendez-vous depuis ton site, même le soir.", "fix": "Un formulaire de demande de rendez-vous, ouvert 24h/24."},
+    {"title": "De nouvelles clientes via Google", "body": "Celles qui ne te suivent pas sur Instagram te trouvent quand elles cherchent un institut près de chez elles.", "fix": "Un site travaillé pour le référencement Google."},
+    {"title": "Rien de technique à gérer", "body": "Domaine, hébergement, maintenance et modifications après la mise en ligne : avec Webora, tout est inclus.", "fix": "Ton site sur mesure, en ligne en 3 jours maximum."}
+  ],
+  "cta_lines": ["Toi, tu prends soin", "de tes *clientes*."]
+}

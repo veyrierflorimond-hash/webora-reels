@@ -1,0 +1,14 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Tu réponds", "encore aux", "*mêmes*", "questions ?"], "voice": "../work/2026-11-28/v0.wav"},
+ {"type": "chat", "lines": ["Entre deux", "*clientes* :"], "contact": "Nouvelles clientes", "status": "en ligne",
+  "messages": [{"at": 2.6, "text": "Bonjour ! C'est combien la pose ?"},
+               {"at": 3.0, "text": "Vous êtes où exactement ?"},
+               {"at": 3.8, "text": "Il reste de la place samedi ?"}],
+  "alert": {"at": 4.5, "text": "3 messages sans réponse"}, "voice": "../work/2026-11-28/v1.wav"},
+ {"type": "compare", "lines": ["Et si ton site", "*répondait* ?"], "left_title": "Sans site", "right_title": "Avec un site",
+  "rows": [{"at": 1.1, "left": "Tu réponds à tout", "right": "Tout est en ligne"},
+           {"at": 3.9, "left": "Elle attend ta réponse", "right": "Elle demande son RDV"}], "voice": "../work/2026-11-28/v2.wav"},
+ {"type": "solution", "title": "Sur ton *site* :", "checks": ["Tes prestations détaillées", "Ton adresse et tes horaires", "Demande de RDV 24h/24"],
+  "notif": {"at": 3.8, "title": "Nouvelle demande de RDV", "body": "Pose semi-permanent · samedi"}, "voice": "../work/2026-11-28/v3.wav"},
+ {"type": "cta", "lines": ["Moins de questions,", "plus de", "*rendez-vous*."], "voice": "../work/2026-11-28/v4.wav"}
+]}
