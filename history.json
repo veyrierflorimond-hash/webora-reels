@@ -200,5 +200,33 @@
     "topic": "Problèmes vécus — tes plus beaux chantiers dorment dans ton téléphone (travail invisible, pas de différence, recommandation non confirmée, photos qui ne travaillent pas)",
     "post": "posts/2026-11-27_chantiers_telephone/",
     "metricool_id": 438758373
+  },
+  {
+    "date": "2026-11-28",
+    "slug": "questions_repetees",
+    "audience": "beaute",
+    "topic": "Les mêmes questions répétées entre deux clientes (prix, adresse, dispo) : le site répond à ta place et la cliente demande son RDV",
+    "hook": "Tu réponds encore aux mêmes questions ?",
+    "video": "videos/2026-11-28_questions_repetees.mp4",
+    "metricool_id": 440243855,
+    "format": "reel",
+    "story_metricool_id": 440243877,
+    "interfaces": [
+      "hook",
+      "chat",
+      "compare",
+      "solution",
+      "cta"
+    ],
+    "music_variant": 2
+  },
+  {
+    "date": "2026-11-28",
+    "format": "carousel",
+    "slug": "quotidien_beaute",
+    "audience": "beaute",
+    "topic": "L'offre Webora — ce qu'un site change au quotidien pour une esthéticienne/onglerie/spa (moins de questions, demandes pendant les soins, clientes via Google, rien de technique à gérer)",
+    "post": "posts/2026-11-28_quotidien_beaute/",
+    "metricool_id": 440244191
   }
 ]
