@@ -1,232 +1,260 @@
 [
-  {
-    "date": "2026-11-20",
-    "slug": "introuvable_google",
-    "audience": "tous",
-    "topic": "Le client cherche sur Google et ne te trouve pas",
-    "hook": "Ton prochain client te cherche en ce moment.",
-    "video": "videos/2026-11-20_introuvable_google.mp4",
-    "metricool_id": 434041887,
-    "format": "reel",
-    "story_metricool_id": 434050620
-  },
-  {
-    "date": "2026-11-21",
-    "slug": "chantier_loupe",
-    "audience": "batiment",
-    "topic": "Appel manqué sur le chantier, le client appelle le suivant",
-    "hook": "Tu rates des chantiers sans même le savoir.",
-    "video": "videos/2026-11-21_chantier_loupe.mp4",
-    "metricool_id": 434042182,
-    "format": "reel",
-    "story_metricool_id": 434050638
-  },
-  {
-    "date": "2026-11-22",
-    "slug": "beaute_spa",
-    "audience": "beaute",
-    "topic": "Messages pendant un soin, la cliente réserve ailleurs",
-    "hook": "Pendant ton soin, tu perds des clientes.",
-    "video": "videos/2026-11-22_beaute_spa_musique.mp4",
-    "metricool_id": 436704499,
-    "format": "reel",
-    "story_metricool_id": 436704724,
-    "music_variant": 1
-  },
-  {
-    "date": "2026-11-20",
-    "format": "carousel",
-    "slug": "3_erreurs",
-    "audience": "tous",
-    "topic": "3 erreurs qui font fuir tes clients (Google, photos, devis)",
-    "post": "posts/2026-11-20_3_erreurs/",
-    "metricool_id": 434052383
-  },
-  {
-    "date": "2026-11-21",
-    "format": "carousel",
-    "slug": "checklist_batiment",
-    "audience": "batiment",
-    "topic": "Les 4 choses que doit avoir le site d'un artisan",
-    "post": "posts/2026-11-21_checklist_batiment/",
-    "metricool_id": 434053944
-  },
-  {
-    "date": "2026-11-22",
-    "format": "carousel",
-    "slug": "questions_clientes",
-    "audience": "beaute",
-    "topic": "4 questions que se posent tes clientes avant de réserver",
-    "post": "posts/2026-11-22_questions_clientes/",
-    "metricool_id": 434053971
-  },
-  {
-    "date": "2026-11-23",
-    "slug": "concurrent_visible",
-    "audience": "tous",
-    "topic": "Ton concurrent moins bon mais plus visible sur Google",
-    "hook": "Ton concurrent est moins bon que toi.",
-    "video": "videos/2026-11-23_concurrent_visible_musique.mp4",
-    "metricool_id": 436704517,
-    "format": "reel",
-    "story_metricool_id": 436704734,
-    "interfaces": [
-      "hook",
-      "search",
-      "statement",
-      "statement",
-      "solution",
-      "cta"
-    ],
-    "music_variant": 2
-  },
-  {
-    "date": "2026-11-23",
-    "format": "carousel",
-    "slug": "4_etapes",
-    "audience": "tous",
-    "topic": "Ton site avec Webora en 4 étapes (offre : échange + mini-audit, maquette, site complet, mise en ligne)",
-    "post": "posts/2026-11-23_4_etapes/",
-    "metricool_id": 434191802
-  },
-  {
-    "date": "2026-11-24",
-    "slug": "devis_dimanche",
-    "audience": "batiment",
-    "topic": "Devis demandé le dimanche soir, le client part chez celui qu'il trouve sur Google",
-    "hook": "Dimanche soir, un client cherche un artisan.",
-    "video": "videos/2026-11-24_devis_dimanche_musique.mp4",
-    "metricool_id": 436704534,
-    "format": "reel",
-    "story_metricool_id": 436704746,
-    "interfaces": [
-      "hook",
-      "search",
-      "statement",
-      "solution",
-      "cta"
-    ],
-    "music_variant": 3
-  },
-  {
-    "date": "2026-11-24",
-    "format": "carousel",
-    "slug": "idees_recues",
-    "audience": "batiment",
-    "topic": "4 idées reçues qui font perdre des clients (mythes/réalité : bouche-à-oreille, compliqué, des semaines, Facebook)",
-    "post": "posts/2026-11-24_idees_recues/",
-    "metricool_id": 435541733
-  },
-  {
-    "date": "2026-11-25",
-    "slug": "realisations_beaute",
-    "audience": "beaute",
-    "topic": "La cliente veut voir tes réalisations avant de réserver, elle réserve chez celle qui montre son travail",
-    "hook": "Elle veut voir ton travail avant de réserver.",
-    "video": "videos/2026-11-25_realisations_beaute_musique.mp4",
-    "metricool_id": 436704561,
-    "format": "reel",
-    "story_metricool_id": 436704761,
-    "interfaces": [
-      "hook",
-      "chat",
-      "statement",
-      "site",
-      "cta"
-    ],
-    "music_variant": 0
-  },
-  {
-    "date": "2026-11-25",
-    "format": "carousel",
-    "slug": "site_prothesiste",
-    "audience": "beaute",
-    "topic": "Par métier — prothésiste ongulaire : ce que ton site doit montrer (poses, prestations, adresse/horaires, demande de RDV)",
-    "post": "posts/2026-11-25_site_prothesiste/",
-    "metricool_id": 436654064
-  },
-  {
-    "date": "2026-11-26",
-    "slug": "pas_le_temps",
-    "audience": "tous",
-    "topic": "« Pas le temps de m'occuper d'un site » : en ligne en 3 jours, rien à gérer, tout inclus",
-    "hook": "Pas le temps de t'occuper d'un site ?",
-    "video": "videos/2026-11-26_pas_le_temps.mp4",
-    "metricool_id": 437543418,
-    "format": "reel",
-    "story_metricool_id": 437543429,
-    "interfaces": [
-      "hook",
-      "statement",
-      "compare",
-      "solution",
-      "cta"
-    ],
-    "music_variant": 4
-  },
-  {
-    "date": "2026-11-26",
-    "format": "carousel",
-    "slug": "rassurer_client",
-    "audience": "tous",
-    "topic": "Conseils — comment rassurer un client qui ne te connaît pas (photos, présentation, services/zone, contact facile)",
-    "post": "posts/2026-11-26_rassurer_client/",
-    "metricool_id": 437543450
-  },
-  {
-    "date": "2026-11-27",
-    "slug": "recommande_introuvable",
-    "audience": "batiment",
-    "topic": "On t'a recommandé, le client vérifie sur Google, ne trouve rien et appelle un autre",
-    "hook": "On t'a recommandé. Pourtant, il appelle un autre.",
-    "video": "videos/2026-11-27_recommande_introuvable.mp4",
-    "metricool_id": 438758234,
-    "format": "reel",
-    "story_metricool_id": 438758294,
-    "interfaces": [
-      "hook",
-      "chat",
-      "search",
-      "site",
-      "cta"
-    ],
-    "music_variant": 5
-  },
-  {
-    "date": "2026-11-27",
-    "format": "carousel",
-    "slug": "chantiers_telephone",
-    "audience": "batiment",
-    "topic": "Problèmes vécus — tes plus beaux chantiers dorment dans ton téléphone (travail invisible, pas de différence, recommandation non confirmée, photos qui ne travaillent pas)",
-    "post": "posts/2026-11-27_chantiers_telephone/",
-    "metricool_id": 438758373
-  },
-  {
-    "date": "2026-11-28",
-    "slug": "questions_repetees",
-    "audience": "beaute",
-    "topic": "Les mêmes questions répétées entre deux clientes (prix, adresse, dispo) : le site répond à ta place et la cliente demande son RDV",
-    "hook": "Tu réponds encore aux mêmes questions ?",
-    "video": "videos/2026-11-28_questions_repetees.mp4",
-    "metricool_id": 440243855,
-    "format": "reel",
-    "story_metricool_id": 440243877,
-    "interfaces": [
-      "hook",
-      "chat",
-      "compare",
-      "solution",
-      "cta"
-    ],
-    "music_variant": 2
-  },
-  {
-    "date": "2026-11-28",
-    "format": "carousel",
-    "slug": "quotidien_beaute",
-    "audience": "beaute",
-    "topic": "L'offre Webora — ce qu'un site change au quotidien pour une esthéticienne/onglerie/spa (moins de questions, demandes pendant les soins, clientes via Google, rien de technique à gérer)",
-    "post": "posts/2026-11-28_quotidien_beaute/",
-    "metricool_id": 440244191
-  }
+ {
+  "date": "2026-11-20",
+  "slug": "introuvable_google",
+  "audience": "tous",
+  "topic": "Le client cherche sur Google et ne te trouve pas",
+  "hook": "Ton prochain client te cherche en ce moment.",
+  "video": "videos/2026-11-20_introuvable_google.mp4",
+  "metricool_id": 434041887,
+  "format": "reel",
+  "story_metricool_id": 434050620
+ },
+ {
+  "date": "2026-11-21",
+  "slug": "chantier_loupe",
+  "audience": "batiment",
+  "topic": "Appel manqué sur le chantier, le client appelle le suivant",
+  "hook": "Tu rates des chantiers sans même le savoir.",
+  "video": "videos/2026-11-21_chantier_loupe.mp4",
+  "metricool_id": 434042182,
+  "format": "reel",
+  "story_metricool_id": 434050638
+ },
+ {
+  "date": "2026-11-22",
+  "slug": "beaute_spa",
+  "audience": "beaute",
+  "topic": "Messages pendant un soin, la cliente réserve ailleurs",
+  "hook": "Pendant ton soin, tu perds des clientes.",
+  "video": "videos/2026-11-22_beaute_spa_musique.mp4",
+  "metricool_id": 436704499,
+  "format": "reel",
+  "story_metricool_id": 436704724,
+  "music_variant": 1
+ },
+ {
+  "date": "2026-11-20",
+  "format": "carousel",
+  "slug": "3_erreurs",
+  "audience": "tous",
+  "topic": "3 erreurs qui font fuir tes clients (Google, photos, devis)",
+  "post": "posts/2026-11-20_3_erreurs/",
+  "metricool_id": 434052383
+ },
+ {
+  "date": "2026-11-21",
+  "format": "carousel",
+  "slug": "checklist_batiment",
+  "audience": "batiment",
+  "topic": "Les 4 choses que doit avoir le site d'un artisan",
+  "post": "posts/2026-11-21_checklist_batiment/",
+  "metricool_id": 434053944
+ },
+ {
+  "date": "2026-11-22",
+  "format": "carousel",
+  "slug": "questions_clientes",
+  "audience": "beaute",
+  "topic": "4 questions que se posent tes clientes avant de réserver",
+  "post": "posts/2026-11-22_questions_clientes/",
+  "metricool_id": 434053971
+ },
+ {
+  "date": "2026-11-23",
+  "slug": "concurrent_visible",
+  "audience": "tous",
+  "topic": "Ton concurrent moins bon mais plus visible sur Google",
+  "hook": "Ton concurrent est moins bon que toi.",
+  "video": "videos/2026-11-23_concurrent_visible_musique.mp4",
+  "metricool_id": 436704517,
+  "format": "reel",
+  "story_metricool_id": 436704734,
+  "interfaces": [
+   "hook",
+   "search",
+   "statement",
+   "statement",
+   "solution",
+   "cta"
+  ],
+  "music_variant": 2
+ },
+ {
+  "date": "2026-11-23",
+  "format": "carousel",
+  "slug": "4_etapes",
+  "audience": "tous",
+  "topic": "Ton site avec Webora en 4 étapes (offre : échange + mini-audit, maquette, site complet, mise en ligne)",
+  "post": "posts/2026-11-23_4_etapes/",
+  "metricool_id": 434191802
+ },
+ {
+  "date": "2026-11-24",
+  "slug": "devis_dimanche",
+  "audience": "batiment",
+  "topic": "Devis demandé le dimanche soir, le client part chez celui qu'il trouve sur Google",
+  "hook": "Dimanche soir, un client cherche un artisan.",
+  "video": "videos/2026-11-24_devis_dimanche_musique.mp4",
+  "metricool_id": 436704534,
+  "format": "reel",
+  "story_metricool_id": 436704746,
+  "interfaces": [
+   "hook",
+   "search",
+   "statement",
+   "solution",
+   "cta"
+  ],
+  "music_variant": 3
+ },
+ {
+  "date": "2026-11-24",
+  "format": "carousel",
+  "slug": "idees_recues",
+  "audience": "batiment",
+  "topic": "4 idées reçues qui font perdre des clients (mythes/réalité : bouche-à-oreille, compliqué, des semaines, Facebook)",
+  "post": "posts/2026-11-24_idees_recues/",
+  "metricool_id": 435541733
+ },
+ {
+  "date": "2026-11-25",
+  "slug": "realisations_beaute",
+  "audience": "beaute",
+  "topic": "La cliente veut voir tes réalisations avant de réserver, elle réserve chez celle qui montre son travail",
+  "hook": "Elle veut voir ton travail avant de réserver.",
+  "video": "videos/2026-11-25_realisations_beaute_musique.mp4",
+  "metricool_id": 436704561,
+  "format": "reel",
+  "story_metricool_id": 436704761,
+  "interfaces": [
+   "hook",
+   "chat",
+   "statement",
+   "site",
+   "cta"
+  ],
+  "music_variant": 0
+ },
+ {
+  "date": "2026-11-25",
+  "format": "carousel",
+  "slug": "site_prothesiste",
+  "audience": "beaute",
+  "topic": "Par métier — prothésiste ongulaire : ce que ton site doit montrer (poses, prestations, adresse/horaires, demande de RDV)",
+  "post": "posts/2026-11-25_site_prothesiste/",
+  "metricool_id": 436654064
+ },
+ {
+  "date": "2026-11-26",
+  "slug": "pas_le_temps",
+  "audience": "tous",
+  "topic": "« Pas le temps de m'occuper d'un site » : en ligne en 3 jours, rien à gérer, tout inclus",
+  "hook": "Pas le temps de t'occuper d'un site ?",
+  "video": "videos/2026-11-26_pas_le_temps.mp4",
+  "metricool_id": 437543418,
+  "format": "reel",
+  "story_metricool_id": 437543429,
+  "interfaces": [
+   "hook",
+   "statement",
+   "compare",
+   "solution",
+   "cta"
+  ],
+  "music_variant": 4
+ },
+ {
+  "date": "2026-11-26",
+  "format": "carousel",
+  "slug": "rassurer_client",
+  "audience": "tous",
+  "topic": "Conseils — comment rassurer un client qui ne te connaît pas (photos, présentation, services/zone, contact facile)",
+  "post": "posts/2026-11-26_rassurer_client/",
+  "metricool_id": 437543450
+ },
+ {
+  "date": "2026-11-27",
+  "slug": "recommande_introuvable",
+  "audience": "batiment",
+  "topic": "On t'a recommandé, le client vérifie sur Google, ne trouve rien et appelle un autre",
+  "hook": "On t'a recommandé. Pourtant, il appelle un autre.",
+  "video": "videos/2026-11-27_recommande_introuvable.mp4",
+  "metricool_id": 438758234,
+  "format": "reel",
+  "story_metricool_id": 438758294,
+  "interfaces": [
+   "hook",
+   "chat",
+   "search",
+   "site",
+   "cta"
+  ],
+  "music_variant": 5
+ },
+ {
+  "date": "2026-11-27",
+  "format": "carousel",
+  "slug": "chantiers_telephone",
+  "audience": "batiment",
+  "topic": "Problèmes vécus — tes plus beaux chantiers dorment dans ton téléphone (travail invisible, pas de différence, recommandation non confirmée, photos qui ne travaillent pas)",
+  "post": "posts/2026-11-27_chantiers_telephone/",
+  "metricool_id": 438758373
+ },
+ {
+  "date": "2026-11-28",
+  "slug": "questions_repetees",
+  "audience": "beaute",
+  "topic": "Les mêmes questions répétées entre deux clientes (prix, adresse, dispo) : le site répond à ta place et la cliente demande son RDV",
+  "hook": "Tu réponds encore aux mêmes questions ?",
+  "video": "videos/2026-11-28_questions_repetees.mp4",
+  "metricool_id": 440243855,
+  "format": "reel",
+  "story_metricool_id": 440243877,
+  "interfaces": [
+   "hook",
+   "chat",
+   "compare",
+   "solution",
+   "cta"
+  ],
+  "music_variant": 2
+ },
+ {
+  "date": "2026-11-28",
+  "format": "carousel",
+  "slug": "quotidien_beaute",
+  "audience": "beaute",
+  "topic": "L'offre Webora — ce qu'un site change au quotidien pour une esthéticienne/onglerie/spa (moins de questions, demandes pendant les soins, clientes via Google, rien de technique à gérer)",
+  "post": "posts/2026-11-28_quotidien_beaute/",
+  "metricool_id": 440244191
+ },
+ {
+  "date": "2026-11-29",
+  "slug": "instagram_suffit",
+  "audience": "tous",
+  "topic": "« Instagram me suffit » : le client cherche sur Google et ne voit jamais ton Instagram ; garde Insta et ajoute un site (visible Google, réalisations rangées, demandes de devis)",
+  "hook": "Ton Instagram est top. Ton client ne le verra jamais.",
+  "video": "videos/2026-11-29_instagram_suffit.mp4",
+  "metricool_id": 441708822,
+  "format": "reel",
+  "story_metricool_id": 441708865,
+  "interfaces": [
+   "hook",
+   "search",
+   "statement",
+   "compare",
+   "cta"
+  ],
+  "music_variant": 4
+ },
+ {
+  "date": "2026-11-29",
+  "format": "carousel",
+  "slug": "instagram_suffit_mythes",
+  "audience": "tous",
+  "topic": "Mythes/réalité — 4 idées reçues sur Instagram (les clients me trouvent sur Insta, mes photos sont déjà en ligne, on m'écrit en message, mon compte c'est ma vitrine)",
+  "post": "posts/2026-11-29_instagram_suffit_mythes/",
+  "metricool_id": 441708909
+ }
 ]
