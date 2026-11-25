@@ -143,7 +143,8 @@
   "audience": "beaute",
   "topic": "Par métier — prothésiste ongulaire : ce que ton site doit montrer (poses, prestations, adresse/horaires, demande de RDV)",
   "post": "posts/2026-11-25_site_prothesiste/",
-  "metricool_id": 436654064
+  "metricool_id": 436654064,
+  "status": "retiré (brouillon Metricool, non publié)"
  },
  {
   "date": "2026-11-26",
@@ -162,7 +163,8 @@
    "solution",
    "cta"
   ],
-  "music_variant": 4
+  "music_variant": 4,
+  "status": "story retirée (brouillon), Reel maintenu"
  },
  {
   "date": "2026-11-26",
@@ -191,7 +193,8 @@
    "site",
    "cta"
   ],
-  "music_variant": 5
+  "music_variant": 5,
+  "status": "story retirée (brouillon), Reel maintenu"
  },
  {
   "date": "2026-11-27",
@@ -204,15 +207,14 @@
   "status": "retiré (brouillon Metricool, non publié)"
  },
  {
-  "date": "2026-11-28",
+  "date": "2026-11-30",
   "slug": "questions_repetees",
   "audience": "beaute",
   "topic": "Les mêmes questions répétées entre deux clientes (prix, adresse, dispo) : le site répond à ta place et la cliente demande son RDV",
   "hook": "Tu réponds encore aux mêmes questions ?",
   "video": "videos/2026-11-28_questions_repetees.mp4",
-  "metricool_id": 440243855,
+  "metricool_id": 441855812,
   "format": "reel",
-  "story_metricool_id": 440243877,
   "interfaces": [
    "hook",
    "chat",
@@ -221,7 +223,7 @@
    "cta"
   ],
   "music_variant": 2,
-  "status": "retiré (brouillon Metricool, non publié)"
+  "status": "déplacé du 28/11 au lun. 30/11 ; story retirée"
  },
  {
   "date": "2026-11-28",
@@ -234,15 +236,14 @@
   "status": "retiré (brouillon Metricool, non publié)"
  },
  {
-  "date": "2026-11-29",
+  "date": "2026-12-01",
   "slug": "instagram_suffit",
   "audience": "tous",
   "topic": "« Instagram me suffit » : le client cherche sur Google et ne voit jamais ton Instagram ; garde Insta et ajoute un site (visible Google, réalisations rangées, demandes de devis)",
   "hook": "Ton Instagram est top. Ton client ne le verra jamais.",
   "video": "videos/2026-11-29_instagram_suffit.mp4",
-  "metricool_id": 441708822,
+  "metricool_id": 441855828,
   "format": "reel",
-  "story_metricool_id": 441708865,
   "interfaces": [
    "hook",
    "search",
@@ -251,7 +252,7 @@
    "cta"
   ],
   "music_variant": 4,
-  "status": "retiré (brouillon Metricool, non publié)"
+  "status": "déplacé du 29/11 au mar. 1/12 ; story retirée"
  },
  {
   "date": "2026-11-29",
