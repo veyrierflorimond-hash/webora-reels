@@ -1,0 +1,14 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Ton *Instagram*", "est top.", "Ton client", "ne le verra", "jamais."], "voice": "../work/2026-11-29/v0.wav"},
+ {"type": "search", "lines": ["Il cherche sur *Google* :"], "query": "peintre près de chez moi",
+  "cards": [{"at": 2.9, "name": "Peinture Lefèvre", "url": "www.peinture-lefevre.fr", "rating": "4,7 · 21 avis"},
+            {"at": 3.15, "name": "Déco Moreau", "url": "www.deco-moreau.fr", "rating": "4,6 · 15 avis"}],
+  "ghost_at": 3.7, "voice": "../work/2026-11-29/v1.wav"},
+ {"type": "statement", "lines": ["Tes photos", "restent sur", "*Instagram*."], "pill": "Il appelle un autre.", "voice": "../work/2026-11-29/v2.wav"},
+ {"type": "compare", "lines": ["Même travail,", "deux *résultats*."], "left_title": "Instagram seul", "right_title": "Avec un site",
+  "rows": [{"at": 1.0, "left": "Vu par tes abonnés", "right": "Trouvé sur Google"},
+           {"at": 2.25, "left": "Photos noyées", "right": "Réalisations bien rangées"},
+           {"at": 4.35, "left": "Messages éparpillés", "right": "Demandes de devis"}],
+  "voice": "../work/2026-11-29/v3.wav"},
+ {"type": "cta", "lines": ["Garde ton Insta.", "Ajoute", "ton *site*."], "voice": "../work/2026-11-29/v4.wav"}
+]}

@@ -1,0 +1,20 @@
+{
+  "tag": "ARTISANS & INDÉPENDANTS",
+  "cover": ["« Instagram", "me *suffit* »"],
+  "cover_sub": "4 idées reçues qui te font perdre des clients.",
+  "slides": [
+    {"title": "« Mes clients me trouvent sur Insta »",
+     "body": "Tes abonnés te voient, oui. Mais celui qui cherche un pro près de chez lui tape sur Google, pas sur Instagram.",
+     "fix": "Un site visible sur Google, à ton nom et dans ta zone."},
+    {"title": "« Mes photos sont déjà en ligne »",
+     "body": "Dans ton fil, tes réalisations se mélangent au reste et descendent vite. Le client doit faire défiler longtemps pour les voir.",
+     "fix": "Une page « Réalisations » claire, classée par type de travaux."},
+    {"title": "« On m'écrit en message »",
+     "body": "Les questions arrivent quand tu as les mains prises, et elles se perdent entre deux conversations.",
+     "fix": "Un formulaire de devis ou de rendez-vous, avec toutes les infos."},
+    {"title": "« Mon compte, c'est ma vitrine »",
+     "body": "Ton compte dépend de la plateforme. Si l'algorithme change, tes publications sont moins vues, et tu n'y peux rien.",
+     "fix": "Un site à toi, avec ton propre nom de domaine."}
+  ],
+  "cta_lines": ["Garde Instagram.", "Ajoute ton *site*."]
+}
