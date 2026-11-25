@@ -171,7 +171,8 @@
   "audience": "tous",
   "topic": "Conseils — comment rassurer un client qui ne te connaît pas (photos, présentation, services/zone, contact facile)",
   "post": "posts/2026-11-26_rassurer_client/",
-  "metricool_id": 437543450
+  "metricool_id": 437543450,
+  "status": "retiré (brouillon Metricool, non publié)"
  },
  {
   "date": "2026-11-27",
@@ -199,7 +200,8 @@
   "audience": "batiment",
   "topic": "Problèmes vécus — tes plus beaux chantiers dorment dans ton téléphone (travail invisible, pas de différence, recommandation non confirmée, photos qui ne travaillent pas)",
   "post": "posts/2026-11-27_chantiers_telephone/",
-  "metricool_id": 438758373
+  "metricool_id": 438758373,
+  "status": "retiré (brouillon Metricool, non publié)"
  },
  {
   "date": "2026-11-28",
@@ -218,7 +220,8 @@
    "solution",
    "cta"
   ],
-  "music_variant": 2
+  "music_variant": 2,
+  "status": "retiré (brouillon Metricool, non publié)"
  },
  {
   "date": "2026-11-28",
@@ -227,7 +230,8 @@
   "audience": "beaute",
   "topic": "L'offre Webora — ce qu'un site change au quotidien pour une esthéticienne/onglerie/spa (moins de questions, demandes pendant les soins, clientes via Google, rien de technique à gérer)",
   "post": "posts/2026-11-28_quotidien_beaute/",
-  "metricool_id": 440244191
+  "metricool_id": 440244191,
+  "status": "retiré (brouillon Metricool, non publié)"
  },
  {
   "date": "2026-11-29",
@@ -246,7 +250,8 @@
    "compare",
    "cta"
   ],
-  "music_variant": 4
+  "music_variant": 4,
+  "status": "retiré (brouillon Metricool, non publié)"
  },
  {
   "date": "2026-11-29",
@@ -255,6 +260,7 @@
   "audience": "tous",
   "topic": "Mythes/réalité — 4 idées reçues sur Instagram (les clients me trouvent sur Insta, mes photos sont déjà en ligne, on m'écrit en message, mon compte c'est ma vitrine)",
   "post": "posts/2026-11-29_instagram_suffit_mythes/",
-  "metricool_id": 441708909
+  "metricool_id": 441708909,
+  "status": "retiré (brouillon Metricool, non publié)"
  }
 ]

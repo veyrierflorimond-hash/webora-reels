@@ -13,7 +13,7 @@ de bout en bout. Langue des contenus : **français, tutoiement**.
 | Dépôt | `veyrierflorimond-hash/webora-reels` (public) — vidéos servies via `https://raw.githubusercontent.com/veyrierflorimond-hash/webora-reels/main/<chemin>` |
 | Voix | Speko, clone **« Webora - voix IA dynamique »**, fournisseur `cartesia`, voice id **`0d3527fd-ceda-4a51-98d4-1849a3358d02`** |
 | Couleurs | bleu pétrole `#04485B`, turquoise `#26B6C4`, blanc cassé `#F7F8F2` (déjà dans le moteur) |
-| Publication | chaque jour : **Reel à 10:00**, **le même Reel en story à 12:30**, **carrousel à 18:00** (heure de Paris) |
+| Publication | **du lundi au vendredi uniquement : un Reel à 10:00** (heure de Paris). Plus de story ni de carrousel, rien le week-end (décidé par Florimond le 25/11/2026 : forfait Metricool limité à 20 publications par mois) |
 
 Cibles : artisans du bâtiment (plombier, électricien, maçon, couvreur, menuisier, peintre, paysagiste…),
 métiers de la beauté et du bien-être (esthéticienne, prothésiste ongulaire, spa, centre de soins, coiffeur…),
@@ -146,8 +146,9 @@ Hashtags (5, choisir selon la cible) :
 
 ## 7. Publier
 
-1. Vérifier dans Metricool (`getScheduledPosts`, brandId 8213553, Europe/Paris) le **prochain jour libre**
-   à partir de demain ; ne jamais programmer deux Reels le même jour.
+1. Vérifier dans Metricool (`getScheduledPosts`, brandId 8213553, Europe/Paris) le **prochain jour ouvré libre**
+   (lundi à vendredi) à partir de demain ; ignorer les posts en brouillon (`draft: true`) ; jamais de week-end,
+   jamais deux Reels le même jour.
 2. Ajouter à `history.json` : `{"date", "slug", "audience", "topic", "hook", "video", "metricool_id", "interfaces"}`
    (`interfaces` = liste des types de scènes dans l'ordre, pour varier d'un Reel à l'autre).
 3. `git add videos/… scenarios/… history.json && git commit && git push` (branche `main`).
@@ -162,12 +163,11 @@ Hashtags (5, choisir selon la cible) :
  "shortener": false, "smartLinkData": {"ids": []}, "text": "<description>",
  "instagramData": {"type": "REEL", "showReelOnFeed": true, "isAiGenerated": true}}
 ```
-6. **Story** : programmer la même vidéo en story le même jour à **12:30** — `createScheduledPost` avec le même
+6. ~~**Story**~~ (**supprimée depuis le 25/11/2026**, ne plus programmer) : programmer la même vidéo en story le même jour à **12:30** — `createScheduledPost` avec le même
    `media`, **sans `text`**, `"instagramData": {"type": "STORY", "isAiGenerated": true}`, sans `videoCoverMilliseconds`.
-7. Reporter les `id` Metricool (Reel + story) dans `history.json`, commit + push.
-8. Faire ensuite le **carrousel du jour** (section 9) pour la même date à 18:00.
+7. Reporter l'`id` Metricool du Reel dans `history.json`, commit + push.
+8. ~~Carrousel du jour~~ : **supprimé depuis le 25/11/2026** (voir section 9).
 9. Prévenir l'utilisateur (message court) : sujet, date de publication, lien `plannerUrl`, la vidéo jointe.
-   Terminer le message par un rappel : « Pense à partager le carrousel en story depuis l'appli Instagram après 18h (bouton Ajouter à ta story) » — ce partage cliquable ne peut pas être automatisé.
 
 Si une étape échoue (voix non conforme après 2 essais, rendu cassé, Metricool en erreur) :
 **ne rien programmer**, prévenir l'utilisateur avec l'erreur exacte.
@@ -183,7 +183,10 @@ Si une étape échoue (voix non conforme après 2 essais, rendu cassé, Metricoo
 3. Écrire 3 à 5 enseignements dans `insights.md` (sujets, accroches, formats qui marchent), commit + push,
    et les appliquer aux Reels de la semaine.
 
-## 9. Carrousel du jour (publication à 18:00)
+## 9. Carrousel du jour (publication à 18:00) — **SUSPENDU depuis le 25/11/2026**
+
+> Ne plus faire de carrousel (forfait Metricool limité à 20 publications par mois). Section gardée pour le jour
+> où Florimond voudra les relancer.
 
 Une publication par jour, en **carrousel** (couverture + 3 à 5 slides + slide finale), même date que le Reel.
 
