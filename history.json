@@ -263,5 +263,22 @@
   "post": "posts/2026-11-29_instagram_suffit_mythes/",
   "metricool_id": 441708909,
   "status": "retiré (brouillon Metricool, non publié)"
+ },
+ {
+  "date": "2026-12-02",
+  "slug": "devis_compare",
+  "audience": "batiment",
+  "format": "reel",
+  "topic": "Ton devis était le meilleur mais le client a choisi l'autre : avant de signer il compare sur Google, l'autre montre chantiers et services, toi rien → il doute ; avec un site il est rassuré",
+  "hook": "Ton devis était le meilleur. Il a choisi l'autre.",
+  "video": "videos/2026-12-02_devis_compare.mp4",
+  "metricool_id": 443087710,
+  "interfaces": [
+   "hook",
+   "search",
+   "compare",
+   "site",
+   "cta"
+  ]
  }
 ]
