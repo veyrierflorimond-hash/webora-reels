@@ -1,0 +1,16 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Ton devis", "était le *meilleur*.", "Il a choisi", "l'autre."], "voice": "../work/2026-12-02/v0.wav"},
+ {"type": "search", "lines": ["Avant de signer,", "il compare sur *Google* :"], "query": "rénovation salle de bain Lyon",
+  "cards": [{"at": 2.3, "name": "Rénovation Bernard", "url": "www.renovation-bernard.fr", "rating": "4,7 · 23 avis"}],
+  "ghost_at": 2.6, "voice": "../work/2026-12-02/v1.wav"},
+ {"type": "compare", "lines": ["Même devis,", "deux *impressions*."], "left_title": "Toi, sans site", "right_title": "Lui, avec un site",
+  "rows": [{"at": 1.0, "left": "Aucune photo", "right": "Ses chantiers en photo"},
+           {"at": 1.7, "left": "Rien à vérifier", "right": "Ses services détaillés"},
+           {"at": 4.5, "left": "Il doute", "right": "Il a confiance"}],
+  "voice": "../work/2026-12-02/v2.wav"},
+ {"type": "site", "lines": ["Avec ton *site*,", "il est rassuré :"], "name": "Ton entreprise", "url": "www.ton-entreprise.fr",
+  "tagline": "Rénovation intérieure", "button": "Accepter le devis", "gallery": ["Salles de bain", "Avant / après", "Cuisines"],
+  "click_at": 3.6, "notif": {"at": 4.1, "title": "Devis accepté", "body": "Rénovation salle de bain"},
+  "voice": "../work/2026-12-02/v3.wav"},
+ {"type": "cta", "lines": ["Ton travail", "mérite d'être", "*vu*."], "voice": "../work/2026-12-02/v4.wav"}
+]}
