@@ -1,0 +1,15 @@
+{"scenes": [
+ {"type": "hook", "lines": ["Elle voulait", "venir chez *toi*.", "Elle a réservé", "ailleurs."], "voice": "../work/2026-12-03/v0.wav"},
+ {"type": "phone", "lines": ["22h, ton institut", "est *fermé*."], "clock": "22:14", "date": "mardi 1 décembre",
+  "notifs": [{"at": 2.4, "kind": "call", "title": "Appel manqué", "body": "06 •• •• •• 27"},
+             {"at": 3.2, "kind": "msg", "title": "Nouveau message", "body": "Bonsoir, une dispo samedi ?"}],
+  "voice": "../work/2026-12-03/v1.wav"},
+ {"type": "search", "lines": ["Alors elle cherche", "sur *Google* :"], "query": "institut de beauté près de moi",
+  "cards": [{"at": 2.2, "name": "Institut Camille", "url": "www.institut-camille.fr", "rating": "4,9 · 41 avis"}],
+  "alert": {"at": 3.4, "text": "Elle réserve chez elle."}, "voice": "../work/2026-12-03/v2.wav"},
+ {"type": "site", "lines": ["Avec ton *site*,", "même fermé :"], "name": "Ton institut", "url": "www.ton-institut.fr",
+  "tagline": "Soins du visage, ongles, épilation", "button": "Demander un RDV", "gallery": ["Soins visage", "Ongles", "Épilation"],
+  "click_at": 2.5, "notif": {"at": 3.0, "title": "Nouvelle demande de RDV", "body": "Soin du visage · samedi"},
+  "voice": "../work/2026-12-03/v3.wav"},
+ {"type": "cta", "lines": ["Ton site", "travaille", "*la nuit*."], "voice": "../work/2026-12-03/v4.wav"}
+]}
