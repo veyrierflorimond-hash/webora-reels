@@ -280,5 +280,22 @@
    "site",
    "cta"
   ]
+ },
+ {
+  "date": "2026-12-03",
+  "format": "reel",
+  "slug": "rdv_soir",
+  "audience": "beaute",
+  "topic": "RDV pris ailleurs le soir : à 22h l'institut est fermé, la cliente appelle/écrit sans réponse, cherche sur Google et réserve chez une autre ; avec un site elle voit les prestations et demande son RDV même institut fermé",
+  "hook": "Elle voulait venir chez toi. Elle a réservé ailleurs.",
+  "video": "videos/2026-12-03_rdv_soir.mp4",
+  "metricool_id": 444349258,
+  "interfaces": [
+   "hook",
+   "phone",
+   "search",
+   "site",
+   "cta"
+  ]
  }
 ]
